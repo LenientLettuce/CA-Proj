@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_64_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Branch_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Immediate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Instruction_Parser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V_Processor

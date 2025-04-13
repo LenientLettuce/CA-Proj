@@ -26,7 +26,12 @@ module Data_Memory(
     input clk,                  // Clock signal for synchronous operations
     input MemWrite,             // Control signal to enable writing to memory
     input MemRead,              // Control signal to enable reading from memory
-    output reg [63:0] Read_Data // Output data read from memory
+    output reg [63:0] Read_Data, // Output data read from memory
+    output [63:0] arr0,
+    output [63:0] arr1,
+    output [63:0] arr2,
+    output [63:0] arr3,
+    output [63:0] arr4
 );
 
 // 64-byte memory array (8-bit wide, 64 elements)

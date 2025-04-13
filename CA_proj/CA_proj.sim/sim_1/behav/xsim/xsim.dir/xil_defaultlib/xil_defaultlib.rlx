@@ -1,0 +1,19 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v,1744550476,verilog,,,,tb_RISC_V_Processor,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_64_bit.v,1744522836,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_Control.v,,ALU_64_bit,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_Control.v,1744522836,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Adder.v,,ALU_Control,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Adder.v,1744522836,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Branch_Unit.v,,Adder,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Branch_Unit.v,1744548375,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Control_Unit.v,,Branch_Unit,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Control_Unit.v,1744522836,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Data_Memory.v,,Control_Unit,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Data_Memory.v,1744550293,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Immediate_Generator.v,,Data_Memory,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Immediate_Generator.v,1744548976,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Instruction_Memory.v,,Imm_Gen,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Instruction_Memory.v,1744522836,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Instruction_Parser.v,,Instruction_Memory,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Instruction_Parser.v,1744548970,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Mux2to1.v,,Instruction_Parser,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Mux2to1.v,1744549059,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Program_Counter.v,,Mux2to1,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Program_Counter.v,1744522836,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/RISC_V_Processor.v,,Program_Counter,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/RISC_V_Processor.v,1744550237,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Register_File.v,,RISC_V_Processor,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Register_File.v,1744522836,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v,,registerFile,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
