@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module InstructionParser_task02(
+module Instruction_Parser(
     input [31:0] instruction,    // 32-bit instruction input
     output [6:0] opcode,         // 7-bit opcode output
     output [4:0] rd,             // 5-bit rd output

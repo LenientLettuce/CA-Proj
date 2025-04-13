@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Multiplexer_task01(
+module Mux2to1(
     input[63:0] a,//input a (64 bits)
     input[63:0] b,//input b (64 bits)
     input selector_bit, //selection bit 
