@@ -22,37 +22,66 @@
 
 module Instruction_Memory(
     input [63:0] Instr_Addr,    // 64-bit instruction address input
-    output [31:0] Instruction   // 32-bit instruction output
+    output reg [31:0] Instruction   // 32-bit instruction output
     );
     
     // Declaring a memory array with 16 entries of 8-bit width (bytes)
-    reg [7:0] Inst_Memory[15:0];  
+    reg [7:0] Inst_memory [151:0];
+    initial begin   //bubble sort
+        {Inst_memory[3], Inst_memory[2], Inst_memory[1], Inst_memory[0]} = 32'h00900093; // addi x1 x0 9
+        {Inst_memory[7], Inst_memory[6], Inst_memory[5], Inst_memory[4]} = 32'h00200113; // addi x2 x0 2
+        {Inst_memory[11], Inst_memory[10], Inst_memory[9], Inst_memory[8]} = 32'h00700193; // addi x3 x0 7
+        {Inst_memory[15], Inst_memory[14], Inst_memory[13], Inst_memory[12]} = 32'h00100213	; // addi x4 x0 1       
+        {Inst_memory[19], Inst_memory[18], Inst_memory[17], Inst_memory[16]} = 32'h00800293; // addi x5 x0 8
+        {Inst_memory[23], Inst_memory[22], Inst_memory[21], Inst_memory[20]} = 32'h00400313; // addi x6 x0 4
+        {Inst_memory[27], Inst_memory[26], Inst_memory[25], Inst_memory[24]} = 32'h00600393; // addi x7 x0 6
+        {Inst_memory[31], Inst_memory[30], Inst_memory[29], Inst_memory[28]} = 32'h00300413; // addi x8 x0 3
+        
+        {Inst_memory[35], Inst_memory[34], Inst_memory[33], Inst_memory[32]} = 32'h10102023; // sw x1 256(x0)	
+        {Inst_memory[39], Inst_memory[38], Inst_memory[37], Inst_memory[36]} = 32'h10202223; // sw x2 260(x0)
+        {Inst_memory[43], Inst_memory[42], Inst_memory[41], Inst_memory[40]} = 32'h10302423	; // sw x3 264(x0)
+        {Inst_memory[47], Inst_memory[46], Inst_memory[45], Inst_memory[44]} = 32'h10402623; // sw x4 268(x0)
+        {Inst_memory[51], Inst_memory[50], Inst_memory[49], Inst_memory[48]} = 32'h10502823; // sw x5 272(x0)
+        {Inst_memory[55], Inst_memory[54], Inst_memory[53], Inst_memory[52]} = 32'h10602a23; // sw x6 276(x0)
+        {Inst_memory[59], Inst_memory[58], Inst_memory[57], Inst_memory[56]} = 32'h10702c23; //sw x7 280(x0)
+        {Inst_memory[63], Inst_memory[62], Inst_memory[61], Inst_memory[60]} = 32'h10802e23; //sw x8 284(x0)
+        
+        
+        {Inst_memory[67], Inst_memory[66], Inst_memory[65], Inst_memory[64]} = 32'h10000513	; //addi x10 x0 256
+        {Inst_memory[71], Inst_memory[70], Inst_memory[69], Inst_memory[68]} = 32'h00800593	; //addi x11 x0 8
+        {Inst_memory[75], Inst_memory[74], Inst_memory[73], Inst_memory[72]} = 32'h00000613; // addi x12 x0 0   
+        {Inst_memory[79], Inst_memory[78], Inst_memory[77], Inst_memory[76]} = 32'h00000693; // addi x13 x0 0
+        {Inst_memory[83], Inst_memory[82], Inst_memory[81], Inst_memory[80]} = 32'hfff58713; // addi x14 x11 -1
+        {Inst_memory[87], Inst_memory[86], Inst_memory[85], Inst_memory[84]} = 32'h04e65263	; //bge x12 x14 68
+        {Inst_memory[91], Inst_memory[90], Inst_memory[89], Inst_memory[88]} = 32'hfff58793	; //addi x15 x11 -1
+        {Inst_memory[95], Inst_memory[94], Inst_memory[93], Inst_memory[92]} = 32'h40c787b3; //sub x15 x15 x12    
+        {Inst_memory[99], Inst_memory[98], Inst_memory[97], Inst_memory[96]} = 32'h02f6d863; // bge x13 x15 48
+        {Inst_memory[103], Inst_memory[102], Inst_memory[101], Inst_memory[100]} = 32'h00269813; // slli x16 x13 2
+        {Inst_memory[107], Inst_memory[106], Inst_memory[105], Inst_memory[104]} = 32'h010508b3	; //add x17 x10 x16
+        {Inst_memory[111], Inst_memory[110], Inst_memory[109], Inst_memory[108]} = 32'h00488913	; //addi x18 x17 4
+        {Inst_memory[115], Inst_memory[114], Inst_memory[113], Inst_memory[112]} = 32'h0008a983; // lw x19 0(x17)   
+        {Inst_memory[119], Inst_memory[118], Inst_memory[117], Inst_memory[116]} = 32'h00092a03; // lw x20 0(x18)
+        {Inst_memory[123], Inst_memory[122], Inst_memory[121], Inst_memory[120]} = 32'h013a4663; // blt x20 x19 12
+        {Inst_memory[127], Inst_memory[126], Inst_memory[125], Inst_memory[124]} = 32'h00168693	; //addi x13 x13 1
+        {Inst_memory[131], Inst_memory[130], Inst_memory[129], Inst_memory[128]} = 32'hfd9ff06f	; //jal x0 -40
+        {Inst_memory[135], Inst_memory[134], Inst_memory[133], Inst_memory[132]} = 32'h0148a023; // sw x20 0(x17)    
+        {Inst_memory[139], Inst_memory[138], Inst_memory[137], Inst_memory[136]} = 32'h01392023; // sw x19 0(x18)
+        {Inst_memory[143], Inst_memory[142], Inst_memory[141], Inst_memory[140]} = 32'hff1ff06f; // jal x0 -16
+        {Inst_memory[147], Inst_memory[146], Inst_memory[145], Inst_memory[144]} = 32'h00160613	; //addi x12 x12 1
+        {Inst_memory[151], Inst_memory[150], Inst_memory[149], Inst_memory[148]} = 32'hfb9ff06f	; //jal x0 -72
+
     
-    // Initializing the instruction memory with values
-    initial begin
-         Inst_Memory[0] = 8'b10000011;
-         Inst_Memory[1] = 8'b00110100;
-         Inst_Memory[2] = 8'b00000101;
-         Inst_Memory[3] = 8'b00001111;
-         Inst_Memory[4] = 8'b10110011;
-         Inst_Memory[5] = 8'b10000100;
-         Inst_Memory[6] = 8'b10011010;
-         Inst_Memory[7] = 8'b00000000;
-         Inst_Memory[8] = 8'b10010011;
-         Inst_Memory[9] = 8'b10000100;
-         Inst_Memory[10] = 8'b00010100;
-         Inst_Memory[11] = 8'b00000000;
-         Inst_Memory[12] = 8'b00100011;
-         Inst_Memory[13] = 8'b00111000;
-         Inst_Memory[14] = 8'b10010101;
-         Inst_Memory[15] = 8'b00001110;
     end
     
-    // Read 4 consecutive bytes starting from Instr_Addr to form a 32-bit instruction
-    assign Instruction[7:0] = Inst_Memory[Instr_Addr];        // Lower byte
-    assign Instruction[15:8] = Inst_Memory[Instr_Addr + 1];   // Second byte
-    assign Instruction[23:16] = Inst_Memory[Instr_Addr + 2];  // Third byte
-    assign Instruction[31:24] = Inst_Memory[Instr_Addr + 3];  // Upper byte
-    
+    always @(Instr_Addr)
+
+        begin
+        Instruction[31:24] <= Inst_memory[Instr_Addr + 3];
+        Instruction[23:16] <= Inst_memory[Instr_Addr + 2];
+        Instruction[15:8] <= Inst_memory[Instr_Addr + 1];
+        Instruction[7:0] <= Inst_memory[Instr_Addr];
+
+    end
 endmodule
+
 

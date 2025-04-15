@@ -32,6 +32,7 @@ module Data_Memory(
     output [63:0] arr2,
     output [63:0] arr3,
     output [63:0] arr4
+    
 );
 
 // 64-byte memory array (8-bit wide, 64 elements)
@@ -46,7 +47,7 @@ end
 
 // Always block to read data when MemRead is high
 always @(*) begin
-    if (MemRead) begin
+    if (MemRead==1) begin
         Read_Data[7:0]   = DataMemory[Mem_Addr];
         Read_Data[15:8]  = DataMemory[Mem_Addr+1];
         Read_Data[23:16] = DataMemory[Mem_Addr+2];
@@ -55,12 +56,14 @@ always @(*) begin
         Read_Data[47:40] = DataMemory[Mem_Addr+5];
         Read_Data[55:48] = DataMemory[Mem_Addr+6];
         Read_Data[63:56] = DataMemory[Mem_Addr+7];
+    end else begin
+        Read_Data = 64'b0; // Set Read_Data to zero when MemRead is not active
     end
 end
 
 // Always block to write data when MemWrite is high (on clock edge)
 always @(posedge clk) begin
-    if (MemWrite) begin
+    if (MemWrite==1) begin
         DataMemory[Mem_Addr]   = Write_Data[7:0];
         DataMemory[Mem_Addr+1] = Write_Data[15:8];
         DataMemory[Mem_Addr+2] = Write_Data[23:16];

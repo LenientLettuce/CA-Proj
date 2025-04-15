@@ -1,217 +1,95 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04/13/2025 05:28:36 PM
-// Design Name: 
-// Module Name: RISC_V_Processor
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module RISC_V_Processor(
     input clk, 
     input reset
-);
-    // Program Counter
-    wire [63:0] PC_out;
+    );
+    wire [63:0] pc_in;
+    wire [63:0] pc_out;
+    wire [31:0] instruction;
+    wire [6:0] opcode;
+    wire [4:0] rd;
+    wire [2:0] func3;
+    wire [4:0] rs1;
+    wire [4:0] rs2;
+    wire [6:0] func7;
+    wire branch;
+    wire mem_read;
+    wire mem_to_reg;
+    wire [1:0] alu_op;
+    wire mem_write;
+    wire alu_src;
+    wire reg_write;
+    wire [63:0] imm;
+    wire [63:0] rs1_data;
+    wire [63:0] rs2_data;
+    wire [63:0] next_instruction_address;
+    wire [63:0] branch_instruction_address;
+    wire [3:0] operation;
+    wire [63:0] alu_second_operand;
+    wire zero;
+    wire sel;  // Added for branch condition
     
-    // Register File
-    wire [63:0] ReadData1;
-    wire [63:0] ReadData2;
-    
-    // Muxes
-    wire [63:0] alu_src_mux_out;   // ALU second operand (rs2 or immediate)
-    wire [63:0] pc_next_mux_out;   // Next PC (PC+4 or branch target)
-    wire [63:0] writeback_mux_out; // Writeback data (ALU result or memory data)
-    
-    // Immediate
-    wire [63:0] imm_value;
-    wire [63:0] shifted_imm;       // Immediate shifted left by 1
-    
-    // ALU
     wire [63:0] alu_result;
-    wire        alu_zero;          // ALU zero flag
+    wire [63:0] read_data;
+    wire [63:0] write_data_reg;
+    wire [63:0] write_data_mem;
     
-    // Adders
-    wire [63:0] pc_plus4;          // PC + 4
-    wire [63:0] branch_target;     // PC + branch offset
-    
-    // Instruction
-    wire [31:0] Instruction;
-    wire [6:0]  opcode;
-    wire [6:0]  funct7; 
-    wire [2:0]  funct3;  
-    wire [4:0]  rs1;
-    wire [4:0]  rs2;
-    wire [4:0]  rd;
-    
-    // Control Signals
-    wire [1:0]  ALUOp;
-    wire        RegWrite, MemRead, MemWrite, MemtoReg, ALUsrc, Branch, branch_sel;
-    
-    // ALU Control
-    wire [3:0]  alu_operation;     // ALU control signal
-    wire [3:0]  funct_combined;    // Combined funct7 and funct3
-    
-    // Data Memory
-    wire [63:0] mem_read_data;     // Data read from memory
+    // Array outputs from data memory
     wire [63:0] array0;
     wire [63:0] array1;
     wire [63:0] array2;
     wire [63:0] array3;
     wire [63:0] array4;
-
-    // Adder: PC + 4
-    Adder pc_plus4_adder (
-        .a(PC_out),
-        .b(64'd4),
-        .out(pc_plus4)
-    );
     
-    // Mux: Select next PC (PC+4 or branch target)
-    Mux2to1 pc_next_mux (
-        .a(pc_plus4),
-        .b(branch_target),
-        .selector_bit(Branch & branch_sel),
-        .data_out(pc_next_mux_out)
-    );
-
-    // Program Counter
-    Program_Counter pc (
-        .clk(clk),
-        .reset(reset),
-        .PC_In(pc_next_mux_out),
-        .PC_Out(PC_out)
-    );
-
-    // Instruction Memory
-    Instruction_Memory imem (
-        .Instr_Addr(PC_out),
-        .Instruction(Instruction)
-    );
+    // Program counter to track the instruction address
+    Program_Counter pc(clk,reset,pc_in,pc_out);
     
-    // Instruction Parser
-    Instruction_Parser parser (
-        .instruction(Instruction),
-        .opcode(opcode),
-        .rd(rd),
-        .funct3(funct3),
-        .rs1(rs1),
-        .rs2(rs2),
-        .funct7(funct7)
-    );
-
-    // Immediate Generator
-    Imm_Gen imm_gen (
-        .instruction(Instruction),
-        .imm_data(imm_value)
-    );
+    // Computes next instruction address by adding 4 to PC
+    Adder adder1 (pc_out, 64'd4, next_instruction_address);
     
-    // Control Unit
-    Control_Unit control (
-        .Opcode(opcode),
-        .ALUOp(ALUOp),
-        .Branch(Branch),
-        .MemRead(MemRead),
-        .MemtoReg(MemtoReg),
-        .MemWrite(MemWrite),
-        .ALUSrc(ALUsrc),
-        .RegWrite(RegWrite)
-    );
-
-    // Register File
-    registerFile reg_file (
-        .WriteData(writeback_mux_out),
-        .RS1(rs1),
-        .RS2(rs2),
-        .RD(rd),
-        .RegWrite(RegWrite),
-        .clk(clk),
-        .reset(reset),
-        .ReadData1(ReadData1),
-        .ReadData2(ReadData2)
-    );
+    // Fetches instruction from memory
+    Instruction_Memory im (pc_out,instruction);
     
-    // Branch Condition Unit
-    Branch_Unit branch_unit (
-        .Funct3(funct3),
-        .ReadData1(ReadData1),
-        .ReadData2(ReadData2),
-        .sel(branch_sel)
-    );
+    // Parses the instruction into opcode, register addresses, and function codes
+    Instruction_Parser ip (instruction, opcode, rd, func3, rs1, rs2, func7);
     
-    // Shift immediate left by 1 for branch offset
-    assign shifted_imm = imm_value << 1;
-
-    // Adder: Calculate branch target address
-    Adder branch_target_adder (
-        .a(PC_out),
-        .b(shifted_imm),
-        .out(branch_target)
-    ); 
-
-    // Mux: Select ALU second operand (rs2 or immediate)
-    Mux2to1 alu_src_mux (
-        .a(ReadData2),
-        .b(imm_value),
-        .selector_bit(ALUsrc),
-        .data_out(alu_src_mux_out)
-    );
+    // Generates immediate values from instruction
+    Immediate_Generator ig (instruction, imm);
     
-    // Combine funct7 and funct3 for ALU Control
-    assign funct_combined = {Instruction[30], funct3};
-
-    // ALU Control
-    ALU_Control alu_control (
-        .ALUOp(ALUOp),
-        .Funct(funct_combined),
-        .Operation(alu_operation)
-    );
-
-    // ALU
-    ALU_64_bit alu (
-        .a(ReadData1),
-        .b(alu_src_mux_out),
-        .Cin(1'b0),          // No carry-in
-        .ALUOp(alu_operation),
-        .Cout(),             // Carry-out unused
-        .ZERO(alu_zero),
-        .Result(alu_result)
-    );
+    // Computes branch address by adding immediate to PC
+    wire [63:0] shifted_imm;
+    assign shifted_imm = imm << 1;
+    Adder adder2 (pc_out, shifted_imm, branch_instruction_address);
     
-    // Data Memory
-    Data_Memory dmem (
-        .Mem_Addr(alu_result),
-        .Write_Data(ReadData2),
-        .clk(clk),
-        .MemWrite(MemWrite),
-        .MemRead(MemRead),
-        .Read_Data(mem_read_data),
-        .arr0(array0),
-        .arr1(array1),
-        .arr2(array2),
-        .arr3(array3),
-        .arr4(array4)
-    );
+    // Branch condition unit
+    Branch_Unit bu(func3, rs1_data, rs2_data, sel);
     
-    // Mux: Select writeback data (ALU result or memory data)
-    Mux2to1 writeback_mux (
-        .a(alu_result),
-        .b(mem_read_data),
-        .selector_bit(MemtoReg),
-        .data_out(writeback_mux_out)
-    );
+    // Selects next PC value based on branch conditions
+    Mux2to1 pc_mux (next_instruction_address, branch_instruction_address, (branch & sel), pc_in);
     
+    // Control unit generates control signals based on opcode
+    Control_Unit cu (opcode, alu_op, branch, mem_read, mem_to_reg, mem_write, alu_src, reg_write);
+    
+    // Register file stores and provides data for registers
+    Register_File rf (write_data_reg, rs1, rs2, rd, reg_write, clk, reset, rs1_data, rs2_data);
+    
+    // Selects second operand for ALU (register data or immediate)
+    Mux2to1 reg_mux (rs2_data, imm, alu_src, alu_second_operand);
+    
+    // Determines ALU operation based on instruction type
+    wire [3:0] funct;
+    assign funct[3] = instruction[30];
+    assign funct[2:0] = instruction[14:12];
+    ALU_Control aluc (alu_op, funct, operation);
+    
+    // Performs arithmetic and logical operations (modified to match first module's interface)
+    ALU_64_bit alu (rs1_data, alu_second_operand, operation, alu_result, zero);
+    
+    // Memory unit for data load and store operations (added array outputs)
+    assign write_data_mem = rs2_data;
+    Data_Memory dm (alu_result, write_data_mem, clk, mem_write, mem_read, read_data, 
+                   array0, array1, array2, array3, array4);
+    
+    // Selects data to write back to register (ALU result or memory read data)
+    Mux2to1 mem_mux (alu_result, read_data, mem_to_reg, write_data_reg);
 endmodule

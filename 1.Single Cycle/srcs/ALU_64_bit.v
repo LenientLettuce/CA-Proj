@@ -1,62 +1,34 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/10/2025 04:02:44 PM
-// Design Name: 
-// Module Name: ALU_64_bit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module ALU_64_bit(
-    input [63:0] a,         // A
-    input [63:0] b,         // B
-    input Cin,       // Carry-in
-    input [3:0] ALUOp, //ALU Operation
-    output Cout, ZERO,     // Carry-out and ZERO
-    output reg [63:0] Result    // Result
-    );
+    input [63:0] a,         // Operand A
+    input [63:0] b,         // Operand B
+    input [3:0] ALUOp,      // ALU Operation code
+    output reg ZERO,        // Zero flag
+    output reg [63:0] Result // Computed result
+);
     
-    wire [63:0] a_bar, b_bar, and_r, or_r, xor_r, add, sub; //wires for various operations
+    wire [63:0] and_r, or_r, xor_r, add, sub; 
     
-    //assigning A not and B not
-    assign a_bar = ~a;
-    assign b_bar = ~b;
-    
-    
-    //Calculating results
+    // Logical operations
     assign and_r = a & b;
-    assign or_r = a | b;
+    assign or_r  = a | b;
     assign xor_r = a ^ b;
     
-    assign add = a + b + Cin;
-    assign sub = a - b + Cin;
-    
-    assign ZERO = (Result == 64'b0);
-    
-    assign Cout = (a[63] & b[63]) | ((a[63] | b[63]) & add[63]);
-    
-    //Figuring out which result to output
+    // Arithmetic operations
+    assign add = a + b;      // Addition
+    assign sub = a - b;      // Subtraction
+
     always @(*) begin
         case (ALUOp)
-            4'b0000: Result = and_r;     // AND
-            4'b0001: Result = or_r;      // OR
-            4'b0010: Result = add;       // ADD
-            4'b0011: Result = sub;       // SUB
-            4'b0100: Result = xor_r;     // XOR
-            default: Result = 64'b0;     // Default to 0 if no operation matches
+            4'b0000: Result = and_r; // AND
+            4'b0001: Result = or_r;  // OR
+            4'b0010: Result = add;   // ADD
+            4'b0011: Result = sub;   // SUB
+            4'b0100: Result = xor_r; // XOR
+            default: Result = 64'b0; // Default to zero
         endcase
+
+        // Set flags
+        ZERO = (Result == 64'b0);  
+        //Cout = (ALUOp == 4'b0010) ? (a > add) : 1'b0; // Carry only for ADD
     end
 endmodule

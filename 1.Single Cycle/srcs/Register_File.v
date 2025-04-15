@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module registerFile(
+module Register_File(
     input [63:0] WriteData,      // 64-bit input data for writing to a register
     input [4:0] RS1,             // 5-bit address of register 1 (for reading)
     input [4:0] RS2,             // 5-bit address of register 2 (for reading)
@@ -45,16 +45,16 @@ module registerFile(
     
     // Write to the register on the rising edge of the clock when RegWrite is asserted
     always @(posedge clk) begin 
-        if (RegWrite) begin
+        if (RegWrite==1) begin
             Registers[RD] <= WriteData;  // Non-blocking assignment for writing to a register
         end
     end
 
     // Read from the registers
     always @(*) begin
-        if (reset) begin
-            ReadData1 <= 64'b0;  // Reset output to 0
-            ReadData2 <= 64'b0;  // Reset output to 0
+        if (reset==1) begin
+            ReadData1 = 64'b0;  // Reset output to 0
+            ReadData2 = 64'b0;  // Reset output to 0
         end else begin
             ReadData1 <= Registers[RS1];  // Output data from register specified by RS1
             ReadData2 <= Registers[RS2];  // Output data from register specified by RS2

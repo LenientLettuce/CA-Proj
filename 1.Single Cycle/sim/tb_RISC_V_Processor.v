@@ -43,27 +43,9 @@ module tb_RISC_V_Processor();
         reset = 0;
 
         // Let the processor run for some time
-        #200;
+        #250;
 
         $finish;
-    end
-
-    // Monitor signals and display results
-    initial begin
-     $display("Time | PC | Inst | rs1 | rs2 | rd | WriteData | ReadData1 | ReadData2 | Imm_Data | ALU_In1 | ALU_Result | Mem_Addr | Read_Data");
-     $monitor("%0t | %0d | %032b | %0d | %0d | %0d | %0d | %0d | %0d | %0d | %0d | %0d | %0d | %0d", 
-             $time,
-             _Processor.PC_out[31:0],
-             _Processor.Instruction,
-             _Processor.rs1, _Processor.rs2, _Processor.rd,
-             _Processor.writeback_mux_out[31:0], // WriteData
-             _Processor.ReadData1[31:0], _Processor.ReadData2[31:0],
-             _Processor.imm_value[31:0],
-             _Processor.alu_src_mux_out[31:0],
-             _Processor.alu_result[31:0],
-             _Processor.branch_target[31:0],
-             _Processor.writeback_mux_out[31:0]  // Assuming this is Read_Data
-             );
     end
 
 

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/13/2025 05:44:08 PM
+// Create Date: 04/15/2025 11:34:15 PM
 // Design Name: 
-// Module Name: BranchUnit
+// Module Name: Branch_Unit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -18,6 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
+
 
 module Branch_Unit(
     input [2:0] Funct3,
