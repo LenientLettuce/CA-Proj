@@ -20,14 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Mux2to1(
-    input[63:0] a,//input a (64 bits)
-    input[63:0] b,//input b (64 bits)
-    input selector_bit, //selection bit 
-    output[63:0] data_out
-    );
+module Multiplexer(a, b, selector_bit, data_out);
+    input [63:0] a;         // First input data
+    input [63:0] b;         // Second input data
+    input selector_bit;     // Selection control
+    output reg [63:0] data_out; // Output register
     
-   assign data_out = selector_bit? b:a; 
-   //If selection bit is 1, output is b. 
-   //If selection but is 0, output is a. 
+    always @(*) begin       // Combinational logic block
+        data_out <= selector_bit ? b : a;  // Select b when selector=1, a when selector=0
+    end
 endmodule
