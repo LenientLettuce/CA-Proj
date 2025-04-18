@@ -21,59 +21,114 @@
 
 
 module Data_Memory(
-    input [63:0] Mem_Addr,     // Memory address input
-    input [63:0] Write_Data,    // Data to write into memory
-    input clk,                  // Clock signal for synchronous operations
-    input MemWrite,             // Control signal to enable writing to memory
-    input MemRead,              // Control signal to enable reading from memory
-    output reg [63:0] Read_Data, // Output data read from memory
-    output [63:0] arr0,
-    output [63:0] arr1,
-    output [63:0] arr2,
-    output [63:0] arr3,
-    output [63:0] arr4
-    
+    input [63:0] mem_add,
+    input [63:0] write_data,
+    input clk,
+    input mem_write,
+    input mem_read,
+    output reg [63:0] read_data,
+    // Array outputs for monitoring - 7 integers (4 bytes each)
+    output [31:0] arr0,
+    output [31:0] arr1,
+    output [31:0] arr2,
+    output [31:0] arr3,
+    output [31:0] arr4,
+    output [31:0] arr5,
+    output [31:0] arr6
 );
-
-// 64-byte memory array (8-bit wide, 64 elements)
-reg [7:0] DataMemory[63:0];
-
-// Initialize memory with values 0 to 63 during simulation start
-integer i;
-initial begin
-    for (i = 0; i < 64; i = i + 1)
-        DataMemory[i] = i;
-end
-
-// Always block to read data when MemRead is high
-always @(*) begin
-    if (MemRead==1) begin
-        Read_Data[7:0]   = DataMemory[Mem_Addr];
-        Read_Data[15:8]  = DataMemory[Mem_Addr+1];
-        Read_Data[23:16] = DataMemory[Mem_Addr+2];
-        Read_Data[31:24] = DataMemory[Mem_Addr+3];
-        Read_Data[39:32] = DataMemory[Mem_Addr+4];
-        Read_Data[47:40] = DataMemory[Mem_Addr+5];
-        Read_Data[55:48] = DataMemory[Mem_Addr+6];
-        Read_Data[63:56] = DataMemory[Mem_Addr+7];
-    end else begin
-        Read_Data = 64'b0; // Set Read_Data to zero when MemRead is not active
+    // 512 bytes of memory (0x000 to 0x1FF)
+    reg [7:0] Data_Memory [511:0]; 
+    integer i;
+    
+    initial begin
+        // Initialize all memory to 0
+        for (i = 0; i < 512; i = i + 1)
+            Data_Memory[i] = 0;
+        
+        // Initialize array at memory address 0x100 (256 decimal)
+        // Each integer is 4 bytes (32 bits)
+        // Initialize 7 integers for sorting
+        // First integer at 0x100
+        Data_Memory[256] = 8'd4;
+        Data_Memory[257] = 8'd0;
+        Data_Memory[258] = 8'd0;
+        Data_Memory[259] = 8'd0;
+        
+        // Second integer at 0x104
+        Data_Memory[260] = 8'd1;
+        Data_Memory[261] = 8'd0;
+        Data_Memory[262] = 8'd0;
+        Data_Memory[263] = 8'd0;
+        
+        // Third integer at 0x108
+        Data_Memory[264] = 8'd7;
+        Data_Memory[265] = 8'd0;
+        Data_Memory[266] = 8'd0;
+        Data_Memory[267] = 8'd0;
+        
+        // Fourth integer at 0x10C
+        Data_Memory[268] = 8'd2;
+        Data_Memory[269] = 8'd0;
+        Data_Memory[270] = 8'd0;
+        Data_Memory[271] = 8'd0;
+        
+        // Fifth integer at 0x110
+        Data_Memory[272] = 8'd5;
+        Data_Memory[273] = 8'd0;
+        Data_Memory[274] = 8'd0;
+        Data_Memory[275] = 8'd0;
+        
+        // Sixth integer at 0x114
+        Data_Memory[276] = 8'd6;
+        Data_Memory[277] = 8'd0;
+        Data_Memory[278] = 8'd0;
+        Data_Memory[279] = 8'd0;
+        
+        // Seventh integer at 0x118
+        Data_Memory[280] = 8'd3;
+        Data_Memory[281] = 8'd0;
+        Data_Memory[282] = 8'd0;
+        Data_Memory[283] = 8'd0;
     end
-end
-
-// Always block to write data when MemWrite is high (on clock edge)
-always @(posedge clk) begin
-    if (MemWrite==1) begin
-        DataMemory[Mem_Addr]   = Write_Data[7:0];
-        DataMemory[Mem_Addr+1] = Write_Data[15:8];
-        DataMemory[Mem_Addr+2] = Write_Data[23:16];
-        DataMemory[Mem_Addr+3] = Write_Data[31:24];
-        DataMemory[Mem_Addr+4] = Write_Data[39:32];
-        DataMemory[Mem_Addr+5] = Write_Data[47:40];
-        DataMemory[Mem_Addr+6] = Write_Data[55:48];
-        DataMemory[Mem_Addr+7] = Write_Data[63:56];
+    
+    // Map array outputs to monitor sorting progress
+    // Each integer is 32-bits (4 bytes) - we only need 32 bits for each integer
+    assign arr0 = {Data_Memory[259], Data_Memory[258], Data_Memory[257], Data_Memory[256]};
+    assign arr1 = {Data_Memory[263], Data_Memory[262], Data_Memory[261], Data_Memory[260]};
+    assign arr2 = {Data_Memory[267], Data_Memory[266], Data_Memory[265], Data_Memory[264]};
+    assign arr3 = {Data_Memory[271], Data_Memory[270], Data_Memory[269], Data_Memory[268]};
+    assign arr4 = {Data_Memory[275], Data_Memory[274], Data_Memory[273], Data_Memory[272]};
+    assign arr5 = {Data_Memory[279], Data_Memory[278], Data_Memory[277], Data_Memory[276]};
+    assign arr6 = {Data_Memory[283], Data_Memory[282], Data_Memory[281], Data_Memory[280]};
+    
+    always @(*) begin
+        if (mem_read == 1'b1) begin
+            // Read 64 bits (8 bytes) from memory
+            read_data[7:0] <= Data_Memory[mem_add];
+            read_data[15:8] <= Data_Memory[mem_add+1];
+            read_data[23:16] <= Data_Memory[mem_add+2];
+            read_data[31:24] <= Data_Memory[mem_add+3];
+            read_data[39:32] <= Data_Memory[mem_add+4];
+            read_data[47:40] <= Data_Memory[mem_add+5];
+            read_data[55:48] <= Data_Memory[mem_add+6];
+            read_data[63:56] <= Data_Memory[mem_add+7];
+        end
+        else
+            read_data <= 64'b0;
     end
-end
-
+    
+    always @(posedge clk) begin
+        if (mem_write == 1'b1) begin
+            // Write 64 bits (8 bytes) to memory
+            Data_Memory[mem_add+7] <= write_data[63:56];
+            Data_Memory[mem_add+6] <= write_data[55:48];
+            Data_Memory[mem_add+5] <= write_data[47:40];
+            Data_Memory[mem_add+4] <= write_data[39:32];
+            Data_Memory[mem_add+3] <= write_data[31:24];
+            Data_Memory[mem_add+2] <= write_data[23:16];
+            Data_Memory[mem_add+1] <= write_data[15:8];
+            Data_Memory[mem_add] <= write_data[7:0];
+        end
+    end
 endmodule
 
