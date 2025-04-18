@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Adder(
-    input [63:0] a,      // 64-bit input 'a'
-    input [63:0] b,      // 64-bit input 'b'
-    output [63:0] out    // 64-bit output 'out'
-    );
+module Adder(a, b, out);
+    input [63:0] a;      // First operand
+    input [63:0] b;      // Second operand
+    output reg [63:0] out; // Result register
     
-    assign out = a + b;  // Output is the sum of inputs 'a' and 'b'
+    always @ (*)         // Sensitivity to any input change
+        out <= a + b;    // Addition operation
 endmodule
