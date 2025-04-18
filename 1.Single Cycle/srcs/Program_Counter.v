@@ -1,22 +1,15 @@
-module Program_Counter(
-    input clk,          // Clock signal
-    input reset,        // Reset signal
-    input [63:0] PC_In, // 64-bit input (next instruction address)
-    output reg [63:0] PC_Out // 64-bit output (current PC address)
-);
-
-    // Initialize PC_Out to 0
-    initial begin
-        PC_Out = 0;
+module Program_Counter(clk, reset, PC_in, PC_out);
+    input clk, reset;       // Clock and reset signals
+    input [63:0] PC_in;     // Next address input
+    output reg [63:0] PC_out; // Current address output
+    
+    always @ (posedge clk)  // Triggered on rising clock edge
+    begin
+        if (reset == 1'b1)  // Reset condition
+            PC_out <= 64'b0;
+        else                // Normal operation
+            begin
+                PC_out <= PC_in; // Update PC value
+            end
     end
-
-    // Always block to update PC at the positive edge of the clock or reset
-    always @(posedge clk) begin
-        if (reset) begin
-            PC_Out <= 0; // Reset PC to 0
-        end else begin
-            PC_Out <= PC_In; // Update PC normally
-        end
-    end
-
 endmodule
