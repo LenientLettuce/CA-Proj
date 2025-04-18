@@ -70,6 +70,9 @@ module RISC_V_Processor(
     Control_Unit t3(opcode, ALUOp, Branch, MemRead, MemtoReg, MemWrite, ALUsrc, RegWrite);
 
     //gives values at rs1 and rs2
+    // Selects between ALU result and memory read data for write back
+    Multiplexer m3(result, ReadData, MemtoReg, mux3out);
+
     Register_File t4(mux3out, rs1, rs2, rd, RegWrite, clk, reset, ReadData1, ReadData2);
     
     //checks whether the instrcution is beq,blt,bgt and gives 1 if branch is taken else 0
@@ -91,8 +94,15 @@ module RISC_V_Processor(
     ALU_Control t7(ALUOp, Funct, operation);
 
     //performs operation
-    ALU_64_bit a2(ReadData1, mux2out, operation, result, zero);
+    ALU_64_bit a2(
+        .a(ReadData1),
+        .b(mux2out),
+        .ALUOp(operation),
+        .ZERO(zero),
+        .Result(result)
+    );
     
     //accessed if instruction needs memory e.g ld/sd
     Data_Memory t5(result, ReadData2, clk, MemWrite, MemRead, ReadData,array0,array1,array2,array3,array4,array5,array6);
     
+endmodule

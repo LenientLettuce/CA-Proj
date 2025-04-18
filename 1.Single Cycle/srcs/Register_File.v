@@ -1,43 +1,48 @@
 `timescale 1ns / 1ps
 
-module Register_File(WriteData, RS1, RS2, RD, RegWrite,clk,reset,ReadData1,ReadData2,r2,r3,r4 );
-    input [63:0] WriteData;
-    input [4:0] RS1;
-    input [4:0] RS2;
-    input [4:0] RD;
-    input RegWrite;
-    input clk;
-    input reset;
-    output reg [63:0] ReadData1;
-    output reg [63:0] ReadData2;
-    
-    output [63:0] r2,r3,r4;
+module Register_File(
+    input [63:0] WriteData,
+    input [4:0] RS1,
+    input [4:0] RS2,
+    input [4:0] RD,
+    input RegWrite,
+    input clk,
+    input reset,
+    output reg [63:0] ReadData1,
+    output reg [63:0] ReadData2,
+    output [63:0] r2, r3, r4
+);
     reg [63:0] Registers [31:0];
-  
+
+    // Initialize all registers (including x0)
     integer i;
     initial begin
-    for (i = 0 ; i < 31 ; i = i + 1)
-        Registers[i] = 0; //initializing values as 0
+        for (i = 0; i < 32; i = i + 1)
+            Registers[i] = 64'b0;
     end
-    
-    always @(*) begin
-    if (reset) //if reset==1, reset readata1 and readata2
-       begin
-       ReadData1<=64'd0;
-       ReadData2<=64'd0;
-       end
-       else begin
-      
-        ReadData1 <= Registers[RS1];  //if reset==0, readdata1 as reg[rs1] and readdata2 as reg[rs2]
-        ReadData2 <= Registers[RS2];
+
+    // Handle register writes (synchronous)
+    always @(posedge clk) begin
+        if (reset) begin
+            // Clear all registers except x0 on reset
+            for (i = 1; i < 32; i = i + 1)
+                Registers[i] <= 64'b0;
         end
-      end
-    
-    always @(posedge clk) //if posedge of clk and regwrite==1, write data in rd
-    begin 
-       if (RegWrite)
-       begin
-       Registers[RD] <= WriteData;
-       end
+        else if (RegWrite && (RD != 0)) begin // Never write to x0
+            Registers[RD] <= WriteData;
+        end
     end
+
+    // Handle register reads (combinational)
+    always @(*) begin
+        // x0 is always 0
+        ReadData1 = (RS1 == 0) ? 64'b0 : Registers[RS1];
+        ReadData2 = (RS2 == 0) ? 64'b0 : Registers[RS2];
+       
+    end
+
+    // Additional register outputs for debugging
+    assign r2 = Registers[2];
+    assign r3 = Registers[3];
+    assign r4 = Registers[4];
 endmodule

@@ -9,7 +9,7 @@ verilog xil_defaultlib  \
 "../../../../../1.Single Cycle/srcs/Immediate_Generator.v" \
 "../../../../../1.Single Cycle/srcs/Instruction_Memory.v" \
 "../../../../../1.Single Cycle/srcs/Instruction_Parser.v" \
-"../../../../../1.Single Cycle/srcs/Mux2to1.v" \
+"../../../../../1.Single Cycle/srcs/Multiplexer.v" \
 "../../../../../1.Single Cycle/srcs/Program_Counter.v" \
 "../../../../../1.Single Cycle/srcs/RISC_V_Processor.v" \
 "../../../../../1.Single Cycle/srcs/Register_File.v" \

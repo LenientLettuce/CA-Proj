@@ -40,7 +40,7 @@ module Data_Memory(
     reg [7:0] Data_Memory [511:0]; 
     integer i;
     
-    initial begin
+        initial begin
         // Initialize all memory to 0
         for (i = 0; i < 512; i = i + 1)
             Data_Memory[i] = 0;
@@ -48,14 +48,15 @@ module Data_Memory(
         // Initialize array at memory address 0x100 (256 decimal)
         // Each integer is 4 bytes (32 bits)
         // Initialize 7 integers for sorting
+        
         // First integer at 0x100
-        Data_Memory[256] = 8'd4;
+        Data_Memory[256] = 8'd9;
         Data_Memory[257] = 8'd0;
         Data_Memory[258] = 8'd0;
         Data_Memory[259] = 8'd0;
         
         // Second integer at 0x104
-        Data_Memory[260] = 8'd1;
+        Data_Memory[260] = 8'd2;
         Data_Memory[261] = 8'd0;
         Data_Memory[262] = 8'd0;
         Data_Memory[263] = 8'd0;
@@ -67,30 +68,32 @@ module Data_Memory(
         Data_Memory[267] = 8'd0;
         
         // Fourth integer at 0x10C
-        Data_Memory[268] = 8'd2;
+        Data_Memory[268] = 8'd1;
         Data_Memory[269] = 8'd0;
         Data_Memory[270] = 8'd0;
         Data_Memory[271] = 8'd0;
         
         // Fifth integer at 0x110
-        Data_Memory[272] = 8'd5;
+        Data_Memory[272] = 8'd8;
         Data_Memory[273] = 8'd0;
         Data_Memory[274] = 8'd0;
         Data_Memory[275] = 8'd0;
         
         // Sixth integer at 0x114
-        Data_Memory[276] = 8'd6;
+        Data_Memory[276] = 8'd4;
         Data_Memory[277] = 8'd0;
         Data_Memory[278] = 8'd0;
         Data_Memory[279] = 8'd0;
         
         // Seventh integer at 0x118
-        Data_Memory[280] = 8'd3;
+        Data_Memory[280] = 8'd6;
         Data_Memory[281] = 8'd0;
         Data_Memory[282] = 8'd0;
         Data_Memory[283] = 8'd0;
+         $monitor("arr0: %d, arr1: %d, arr2: %d, arr3: %d, arr4: %d, arr5: %d, arr6: %d",
+             arr0, arr1, arr2, arr3, arr4, arr5, arr6);
     end
-    
+
     // Map array outputs to monitor sorting progress
     // Each integer is 32-bits (4 bytes) - we only need 32 bits for each integer
     assign arr0 = {Data_Memory[259], Data_Memory[258], Data_Memory[257], Data_Memory[256]};
@@ -120,14 +123,10 @@ module Data_Memory(
     always @(posedge clk) begin
         if (mem_write == 1'b1) begin
             // Write 64 bits (8 bytes) to memory
-            Data_Memory[mem_add+7] <= write_data[63:56];
-            Data_Memory[mem_add+6] <= write_data[55:48];
-            Data_Memory[mem_add+5] <= write_data[47:40];
-            Data_Memory[mem_add+4] <= write_data[39:32];
-            Data_Memory[mem_add+3] <= write_data[31:24];
-            Data_Memory[mem_add+2] <= write_data[23:16];
-            Data_Memory[mem_add+1] <= write_data[15:8];
-            Data_Memory[mem_add] <= write_data[7:0];
+            Data_Memory[mem_add + 3] <= write_data[31:24];
+            Data_Memory[mem_add + 2] <= write_data[23:16];
+            Data_Memory[mem_add + 1] <= write_data[15:8];
+            Data_Memory[mem_add]     <= write_data[7:0];
         end
     end
 endmodule
