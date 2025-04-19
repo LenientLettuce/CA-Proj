@@ -106,16 +106,22 @@ module Data_Memory(
     
     always @(*) begin
         if (mem_read == 1'b1) begin
-            // Read 64 bits (8 bytes) from memory
-            read_data[7:0] <= Data_Memory[mem_add];
-            read_data[15:8] <= Data_Memory[mem_add+1];
-            read_data[23:16] <= Data_Memory[mem_add+2];
-            read_data[31:24] <= Data_Memory[mem_add+3];
-            read_data[39:32] <= Data_Memory[mem_add+4];
-            read_data[47:40] <= Data_Memory[mem_add+5];
-            read_data[55:48] <= Data_Memory[mem_add+6];
-            read_data[63:56] <= Data_Memory[mem_add+7];
-        end
+            if (mem_read == 1'b1) begin
+            // Read 32 bits (4 bytes) from memory and extend to 64 bits
+            // For unsigned loads (LWU): Zero-extend
+            // For signed loads (LW): Sign-extend
+            // You'll need to add a control signal to distinguish between them
+            
+            // Current implementation assumes signed loads (LW)
+            read_data[31:0] = {Data_Memory[mem_add+3], 
+                              Data_Memory[mem_add+2],
+                              Data_Memory[mem_add+1],
+                              Data_Memory[mem_add]};
+                          
+            // Sign-extend the 32-bit value to 64 bits
+            read_data[63:32] = {32{read_data[31]}};  // Replicate sign bit
+                end
+            end
         else
             read_data <= 64'b0;
     end
