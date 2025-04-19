@@ -88,7 +88,9 @@ module RISC_V_Processor(
     Multiplexer m2(ReadData2, imm_data, ALUsrc, mux2out);
     
     //Funct is 3 bits of fucnt3 and 1 bit of funct7
-    assign Funct = {Instruction[30],Instruction[14:12]};
+    wire [2:0] funct3_only = Instruction[14:12];
+    wire is_r_type = (opcode == 7'b0110011);
+    assign Funct = is_r_type ? {Instruction[30], funct3_only} : {1'b0, funct3_only}; 
 
     //gives the 4 bits of operation based on aluop
     ALU_Control t7(ALUOp, Funct, operation);

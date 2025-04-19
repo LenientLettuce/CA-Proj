@@ -69,14 +69,14 @@ module Register_File(
     assign r4 = Registers[4];
     
     // Continuous monitoring of specific registers
-//    always @(posedge clk) begin
-//        $display("[%0t] REG MONITOR: x12=%h x13=%h x17=%h x18=%h x19=%h x20=%h",
-//                $time,
-//                Registers[12],
-//                Registers[13],
-//                Registers[17],
-//                Registers[18],
-//                Registers[19],
-//                Registers[20]);
-//    end
+    always @(posedge clk) begin
+        $display("[%0t] REG MONITOR: x12=%h x13=%h x17=%h x18=%h x19=%h x20=%h",
+                $time,
+                Registers[12],
+                Registers[13],
+                Registers[17],
+                Registers[18],
+                Registers[19],
+                Registers[20]);
+    end
 endmodule
