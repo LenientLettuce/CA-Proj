@@ -1,0 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_64_bit_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_64_bit_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_Control_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Branch_Unit_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_Unit_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Control_Unit_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Data_Memory_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Immediate_Generator_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate_Generator_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Instruction_Memory_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Instruction_Parser_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Parser_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Multiplexer_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Program_Counter_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_Processor_2
+INFO: [VRFC 10-2458] undeclared symbol array0, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:253]
+INFO: [VRFC 10-2458] undeclared symbol array1, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:254]
+INFO: [VRFC 10-2458] undeclared symbol array2, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:255]
+INFO: [VRFC 10-2458] undeclared symbol array3, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:256]
+INFO: [VRFC 10-2458] undeclared symbol array4, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:257]
+INFO: [VRFC 10-2458] undeclared symbol array5, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:258]
+INFO: [VRFC 10-2458] undeclared symbol array6, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:259]
+INFO: [VRFC 10-2458] undeclared symbol MWB_MemToReg, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:280]
+INFO: [VRFC 10-2458] undeclared symbol MWB_ReadData, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:281]
+INFO: [VRFC 10-2458] undeclared symbol MWB_ALUResult, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:282]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Register_File_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V_Processor

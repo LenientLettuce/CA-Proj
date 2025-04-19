@@ -1,18 +1,22 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../1.Single Cycle/srcs/ALU_64_bit.v" \
-"../../../../../1.Single Cycle/srcs/ALU_Control.v" \
-"../../../../../1.Single Cycle/srcs/Adder.v" \
-"../../../../CA_proj.srcs/sources_1/new/Branch_Unit.v" \
-"../../../../../1.Single Cycle/srcs/Control_Unit.v" \
-"../../../../../1.Single Cycle/srcs/Data_Memory.v" \
-"../../../../../1.Single Cycle/srcs/Immediate_Generator.v" \
-"../../../../../1.Single Cycle/srcs/Instruction_Memory.v" \
-"../../../../../1.Single Cycle/srcs/Instruction_Parser.v" \
-"../../../../../1.Single Cycle/srcs/Multiplexer.v" \
-"../../../../../1.Single Cycle/srcs/Program_Counter.v" \
-"../../../../../1.Single Cycle/srcs/RISC_V_Processor.v" \
-"../../../../../1.Single Cycle/srcs/Register_File.v" \
+"../../../../../2.5 Stage Pipeline/srcs/ALU_64_bit_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/ALU_Control_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Adder_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Branch_Unit_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Control_Unit_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Data_Memory_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/EX_MEM.v" \
+"../../../../../2.5 Stage Pipeline/srcs/ID_EX.v" \
+"../../../../../2.5 Stage Pipeline/srcs/IF_ID.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Immediate_Generator_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Instruction_Memory_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Instruction_Parser_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/MEM_WB.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Multiplexer_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Program_Counter_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v" \
+"../../../../../2.5 Stage Pipeline/srcs/Register_File_2.v" \
 "../../../../../1.Single Cycle/sim/tb_RISC_V_Processor.v" \
 
 # compile glbl module

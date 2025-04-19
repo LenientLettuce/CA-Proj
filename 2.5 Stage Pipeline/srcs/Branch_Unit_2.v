@@ -1,4 +1,4 @@
-module Branch_Unit(Funct3, ReadData1, ReadData2, sel);
+module Branch_Unit_2(Funct3, ReadData1, ReadData2, sel);
     input [2:0] Funct3;
     input [63:0] ReadData1, ReadData2;
     output reg sel;

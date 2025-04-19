@@ -1,4 +1,4 @@
-module Register_File(
+module Register_File_2(
     input [63:0] WriteData,
     input [4:0] RS1,
     input [4:0] RS2,

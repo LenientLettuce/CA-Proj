@@ -1,4 +1,4 @@
-module ALU_64_bit(
+module ALU_64_bit_2(
     input [63:0] a,         // Operand A
     input [63:0] b,         // Operand B
     input [3:0] ALUOp,      // ALU Operation code

@@ -1,4 +1,4 @@
-module Data_Memory(
+module Data_Memory_2(
     input [63:0] mem_add,
     input [63:0] write_data,
     input clk,

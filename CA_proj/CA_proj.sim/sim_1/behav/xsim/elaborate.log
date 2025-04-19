@@ -4,5 +4,24 @@ Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ca3b6f4fdf
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+ERROR: [VRFC 10-3180] cannot find port 'next_PC' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:17]
+ERROR: [VRFC 10-3180] cannot find port 'sum' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:25]
+ERROR: [VRFC 10-3180] cannot find port 'Address' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:30]
+ERROR: [VRFC 10-3180] cannot find port 'imm_data' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:72]
+ERROR: [VRFC 10-3180] cannot find port 'rd' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:83]
+ERROR: [VRFC 10-3180] cannot find port 'rs2' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:82]
+ERROR: [VRFC 10-3180] cannot find port 'rs1' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:81]
+ERROR: [VRFC 10-3180] cannot find port 'ALUsrc' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:101]
+ERROR: [VRFC 10-3180] cannot find port 'opcode' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:95]
+ERROR: [VRFC 10-3180] cannot find port 'out' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:175]
+ERROR: [VRFC 10-3180] cannot find port 'sel' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:174]
+ERROR: [VRFC 10-3180] cannot find port 'sum' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:194]
+ERROR: [VRFC 10-3180] cannot find port 'array6' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:259]
+ERROR: [VRFC 10-3180] cannot find port 'array5' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:258]
+ERROR: [VRFC 10-3180] cannot find port 'array4' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:257]
+ERROR: [VRFC 10-3180] cannot find port 'array3' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:256]
+ERROR: [VRFC 10-3180] cannot find port 'array2' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:255]
+ERROR: [VRFC 10-3180] cannot find port 'array1' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:254]
+ERROR: [VRFC 10-3180] cannot find port 'array0' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:253]
+INFO: [#UNDEF] Sorry, too many errors..
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

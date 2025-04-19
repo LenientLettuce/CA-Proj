@@ -1,4 +1,4 @@
-module Adder(a, b, out);
+module Adder_2(a, b, out);
     input [63:0] a;      // First operand
     input [63:0] b;      // Second operand
     output reg [63:0] out; // Result register

@@ -1,4 +1,4 @@
-module Program_Counter(clk, reset, PC_in, PC_out);
+module Program_Counter_2(clk, reset, PC_in, PC_out);
     input clk, reset;       // Clock and reset signals
     input [63:0] PC_in;     // Next address input
     output reg [63:0] PC_out; // Current address output

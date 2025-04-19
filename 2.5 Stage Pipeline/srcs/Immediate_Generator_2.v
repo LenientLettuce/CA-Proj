@@ -1,4 +1,4 @@
-module Immediate_Generator(
+module Immediate_Generator_2(
     input [31:0] instruction,
     output reg [63:0] immediate
 );

@@ -1,4 +1,4 @@
-module ALU_Control(
+module ALU_Control_2(
     input [1:0] ALUOp,
     input [3:0] Funct,
     output reg [3:0] Operation

@@ -1,4 +1,4 @@
-module Control_Unit(
+module Control_Unit_2(
     input [6:0] Opcode,           // 7-bit input Opcode representing instruction type
     output reg [1:0] ALUOp,       // 2-bit ALU operation control signal
     output reg Branch,            // Branch control signal
