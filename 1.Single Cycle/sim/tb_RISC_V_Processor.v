@@ -43,10 +43,11 @@ module tb_RISC_V_Processor();
         reset = 0;
 
         // Let the processor run for some time
-        #5000;
+        #3000;
 
         $finish;
     end
+    
 
 
 endmodule

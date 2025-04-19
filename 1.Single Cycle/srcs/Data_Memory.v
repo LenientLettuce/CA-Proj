@@ -49,47 +49,47 @@ module Data_Memory(
         // Each integer is 4 bytes (32 bits)
         // Initialize 7 integers for sorting
         
-        // First integer at 0x100
-        Data_Memory[256] = 8'd9;
-        Data_Memory[257] = 8'd0;
-        Data_Memory[258] = 8'd0;
-        Data_Memory[259] = 8'd0;
-        
-        // Second integer at 0x104
-        Data_Memory[260] = 8'd2;
-        Data_Memory[261] = 8'd0;
-        Data_Memory[262] = 8'd0;
-        Data_Memory[263] = 8'd0;
-        
-        // Third integer at 0x108
-        Data_Memory[264] = 8'd7;
-        Data_Memory[265] = 8'd0;
-        Data_Memory[266] = 8'd0;
-        Data_Memory[267] = 8'd0;
-        
-        // Fourth integer at 0x10C
-        Data_Memory[268] = 8'd1;
-        Data_Memory[269] = 8'd0;
-        Data_Memory[270] = 8'd0;
-        Data_Memory[271] = 8'd0;
-        
-        // Fifth integer at 0x110
-        Data_Memory[272] = 8'd8;
-        Data_Memory[273] = 8'd0;
-        Data_Memory[274] = 8'd0;
-        Data_Memory[275] = 8'd0;
-        
-        // Sixth integer at 0x114
-        Data_Memory[276] = 8'd4;
-        Data_Memory[277] = 8'd0;
-        Data_Memory[278] = 8'd0;
-        Data_Memory[279] = 8'd0;
-        
-        // Seventh integer at 0x118
-        Data_Memory[280] = 8'd6;
-        Data_Memory[281] = 8'd0;
-        Data_Memory[282] = 8'd0;
-        Data_Memory[283] = 8'd0;
+//            // First integer at 0x100
+//            Data_Memory[256] = 8'd9;
+//            Data_Memory[257] = 8'd0;
+//            Data_Memory[258] = 8'd0;
+//            Data_Memory[259] = 8'd0;
+            
+//            // Second integer at 0x104
+//            Data_Memory[260] = 8'd2;
+//            Data_Memory[261] = 8'd0;
+//            Data_Memory[262] = 8'd0;
+//            Data_Memory[263] = 8'd0;
+            
+//            // Third integer at 0x108
+//            Data_Memory[264] = 8'd7;
+//            Data_Memory[265] = 8'd0;
+//            Data_Memory[266] = 8'd0;
+//            Data_Memory[267] = 8'd0;
+            
+//            // Fourth integer at 0x10C
+//            Data_Memory[268] = 8'd1;
+//            Data_Memory[269] = 8'd0;
+//            Data_Memory[270] = 8'd0;
+//            Data_Memory[271] = 8'd0;
+            
+//            // Fifth integer at 0x110
+//            Data_Memory[272] = 8'd8;
+//            Data_Memory[273] = 8'd0;
+//            Data_Memory[274] = 8'd0;
+//            Data_Memory[275] = 8'd0;
+            
+//            // Sixth integer at 0x114
+//            Data_Memory[276] = 8'd4;
+//            Data_Memory[277] = 8'd0;
+//            Data_Memory[278] = 8'd0;
+//            Data_Memory[279] = 8'd0;
+            
+//            // Seventh integer at 0x118
+//            Data_Memory[280] = 8'd6;
+//            Data_Memory[281] = 8'd0;
+//            Data_Memory[282] = 8'd0;
+//            Data_Memory[283] = 8'd0;
          $monitor("arr0: %d, arr1: %d, arr2: %d, arr3: %d, arr4: %d, arr5: %d, arr6: %d",
              arr0, arr1, arr2, arr3, arr4, arr5, arr6);
     end
@@ -122,12 +122,18 @@ module Data_Memory(
     
     always @(posedge clk) begin
         if (mem_write == 1'b1) begin
-            // Write 64 bits (8 bytes) to memory
-            Data_Memory[mem_add + 3] <= write_data[31:24];
-            Data_Memory[mem_add + 2] <= write_data[23:16];
-            Data_Memory[mem_add + 1] <= write_data[15:8];
-            Data_Memory[mem_add]     <= write_data[7:0];
+                // Write 32 bits (4 bytes) to memory - proper byte order
+                Data_Memory[mem_add]     <= write_data[7:0];
+                Data_Memory[mem_add + 1] <= write_data[15:8];
+                Data_Memory[mem_add + 2] <= write_data[23:16];
+                Data_Memory[mem_add + 3] <= write_data[31:24];
+                
+                // Only write 32 bits at a time for array elements
+                if (mem_add >= 256 && mem_add <= 280) begin
+                    $display("Writing %d to address %h", write_data[31:0], mem_add);
+            end
         end
     end
+
 endmodule
 

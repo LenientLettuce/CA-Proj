@@ -29,11 +29,11 @@ module Branch_Unit(
         case(Funct3)
             3'b000: sel = (ReadData1 == ReadData2);           // BEQ
             3'b001: sel = (ReadData1 != ReadData2);           // BNE
-            3'b100: sel = ($signed(ReadData1) < $signed(ReadData2));   // BLT (signed)
-            3'b101: sel = ($signed(ReadData1) >= $signed(ReadData2));  // BGE (signed)
-            3'b110: sel = (ReadData1 < ReadData2);            // BLTU (unsigned)
-            3'b111: sel = (ReadData1 >= ReadData2);           // BGEU (unsigned)
-            default: sel = 1'b0; // Handle undefined cases
+            3'b100: sel = ($signed(ReadData1) < $signed(ReadData2));  // BLT
+            3'b101: sel = ($signed(ReadData1) > $signed(ReadData2));  // BGT (not BGE)
+            3'b110: sel = (ReadData1 < ReadData2);            // BLTU
+            3'b111: sel = (ReadData1 >= ReadData2);           // BGEU
+            default: sel = 1'b0;
         endcase
     end
 endmodule

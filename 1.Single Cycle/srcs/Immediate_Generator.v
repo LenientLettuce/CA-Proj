@@ -41,8 +41,8 @@ module Immediate_Generator(
                 immediate = {{52{instruction[31]}}, instruction[31:25], instruction[11:7]};
             end
             7'b1101111: begin // J-type (jal)
-                immediate = {{43{instruction[31]}}, instruction[31], instruction[19:12], instruction[20],
-                             instruction[30:21], 1'b0};
+                immediate = {{44{instruction[31]}}, instruction[31], instruction[19:12], instruction[20],
+                             instruction[30:21]};
             end
             7'b0110111, 7'b0010111: begin // U-type (lui, auipc)
                 immediate = {instruction[31:12], 12'b0};

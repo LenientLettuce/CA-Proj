@@ -1,5 +1,6 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_64_bit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU_64_bit
+INFO: [VRFC 10-2458] undeclared symbol slli, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_64_bit.v:17]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_Control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU_Control
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Adder.v" into library xil_defaultlib
