@@ -135,9 +135,9 @@ module Data_Memory(
                 Data_Memory[mem_add + 3] <= write_data[31:24];
                 
                 // Only write 32 bits at a time for array elements
-                if (mem_add >= 256 && mem_add <= 280) begin
-                    $display("Writing %d to address %h", write_data[31:0], mem_add);
-            end
+                //if (mem_add >= 256 && mem_add <= 280) begin
+                    //$display("Writing %d to address %h", write_data[31:0], mem_add);
+            //end
         end
     end
 

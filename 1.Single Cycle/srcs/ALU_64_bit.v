@@ -6,7 +6,8 @@ module ALU_64_bit(
     output ZERO        // Zero flag
 );
     
-    wire [63:0] and_r, or_r, xor_r, add, sub; 
+    wire [63:0] and_r, or_r, xor_r, add, sub;
+    wire [63:0] slli, srli; // Add this at the top with the other wires 
     
     // Operations
     assign and_r = a & b;
@@ -14,7 +15,8 @@ module ALU_64_bit(
     assign xor_r = a ^ b;
     assign add = a + b;      
     assign sub = a - b;      
-    assign slli =  a * (2 ** b);
+    assign slli = a << b[5:0];  // Use only lower 6 bits for shift amount
+    assign srli = a >> b[5:0];  // Use only lower 6 bits for shift amount
 
     always @(*) begin
         case (ALUOp)
@@ -24,6 +26,7 @@ module ALU_64_bit(
             4'b0011: Result = sub;   // SUB
             4'b0100: Result = xor_r; // XOR
             4'b0101: Result = slli;  // SLLI
+            4'b0110: Result = srli;  // SRLI <-- ADD THIS
             default: Result = 64'b0; // Default to zero
         endcase
     end
