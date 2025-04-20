@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Adder_3(a, b, out);
     input [63:0] a;      // First operand
     input [63:0] b;      // Second operand

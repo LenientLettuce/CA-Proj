@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Program_Counter_3(
     input clk, reset,
     input [63:0] PC_in,

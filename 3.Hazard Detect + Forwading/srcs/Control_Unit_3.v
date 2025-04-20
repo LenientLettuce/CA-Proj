@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Control_Unit_3(
     input [6:0] Opcode,           // 7-bit input Opcode representing instruction type
     output reg [1:0] ALUOp,       // 2-bit ALU operation control signal

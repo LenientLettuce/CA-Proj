@@ -38,10 +38,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/3.H
 INFO: [VRFC 10-311] analyzing module RISC_V_Processor_3
 INFO: [VRFC 10-2458] undeclared symbol PCWrite, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:121]
 INFO: [VRFC 10-2458] undeclared symbol IDEX_control_mux, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:144]
-INFO: [VRFC 10-2458] undeclared symbol MWM_RegWrite, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:219]
-INFO: [VRFC 10-2458] undeclared symbol MWM_rd, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:223]
-INFO: [VRFC 10-2458] undeclared symbol WriteData, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:230]
-INFO: [VRFC 10-2458] undeclared symbol EXM_ALUResult, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:231]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Register_File_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Register_File_3
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v" into library xil_defaultlib

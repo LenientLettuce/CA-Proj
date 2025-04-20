@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Branch_Unit_3(Funct3, ReadData1, ReadData2, sel);
     input [2:0] Funct3;
     input [63:0] ReadData1, ReadData2;

@@ -118,7 +118,7 @@ module RISC_V_Processor_3(
     .IFID_rs2(rs2),
     .IDEX_control_mux(IDEX_Control_Mux_Out), 
     .IFID_Write(IF_ID_Write), 
-    .PC_write(PCWrite)
+    .PC_write(PC_Write)
   );
   
   Immediate_Generator_3 imm_gen (
@@ -141,7 +141,7 @@ module RISC_V_Processor_3(
     .MemWrite  (MemWrite),
     .ALUSrc    (ALUsrc),
     .RegWrite  (RegWrite),
-    .IDEX_control_mux(IDEX_control_mux)
+    .IDEX_control_mux(IDEX_Control_Mux_Out)
   );
 
   Register_File_3 regfile (
@@ -216,27 +216,27 @@ module RISC_V_Processor_3(
   
   Forwarding_Unit forward_unit (
     .EXM_RegWrite(EXM_RegWrite), 
-    .MWB_RegWrite(MWM_RegWrite),
+    .MWB_RegWrite(MWB_RegWrite),
     .IDEX_rs1(IDEX_rs1), 
     .IDEX_rs2(IDEX_rs2),
     .EXM_rd(EXM_rd),
-    .MWB_rd(MWM_rd),
+    .MWB_rd(MWB_rd),
     .Forward_A(Forward_A),
     .Forward_B(Forward_A)
   );
   
   Multiplexer3to1_3 f_a(
       .a(IDEX_ReadData1), 
-      .b(WriteData), 
-      .c(EXM_ALUResult), 
+      .b(WB_data), 
+      .c(EXM_ALU_Result), 
       .selector_bit(Forward_A), 
       .data_out(Forward_A_Output)
   );
     
   Multiplexer3to1_3 f_b(
       .a(IDEX_ReadData2), 
-      .b(WriteData), 
-      .c(EXM_ALUResult), 
+      .b(WB_data), 
+      .c(EXM_ALU_Result), 
       .selector_bit(Forward_B), 
       .data_out(Forward_B_Output)
   );

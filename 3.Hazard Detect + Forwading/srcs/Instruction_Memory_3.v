@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Instruction_Memory_3(
      input [63:0] Instr_Addr,    // 64-bit instruction address input
      output reg [31:0] Instruction   // 32-bit instruction output

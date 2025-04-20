@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Register_File_3(
     input [63:0] WriteData,
     input [4:0] RS1,

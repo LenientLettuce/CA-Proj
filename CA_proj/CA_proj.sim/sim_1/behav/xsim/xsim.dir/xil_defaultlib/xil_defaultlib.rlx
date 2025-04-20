@@ -2,7 +2,7 @@
 2020.1
 May 27 2020
 20:09:33
-D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v,1745161706,verilog,,,,tb_RISC_V_Processor,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v,1745161736,verilog,,,,tb_RISC_V_Processor,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_64_bit.v,1745055676,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_Control.v,,ALU_64_bit,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/ALU_Control.v,1745046367,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Adder.v,,ALU_Control,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Adder.v,1745001128,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.srcs/sources_1/new/Branch_Unit.v,,Adder,,,,,,,,
@@ -50,7 +50,7 @@ D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/MEM_WB_3.v,1745
 D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Multiplexer2to1_3.v,1745150433,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Multiplexer3to1_3.v,,Multiplexer2to1_3,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Multiplexer3to1_3.v,1745160852,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Program_Counter_3.v,,Multiplexer3to1_3,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Program_Counter_3.v,1745152650,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v,,Program_Counter_3,,,,,,,,
-D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v,1745161773,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Register_File_3.v,,RISC_V_Processor_3,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v,1745163037,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Register_File_3.v,,RISC_V_Processor_3,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Register_File_3.v,1745153248,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v,,Register_File_3,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.srcs/sources_1/new/Branch_Unit.v,1745075404,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Control_Unit.v,,Branch_Unit,,,,,,,,

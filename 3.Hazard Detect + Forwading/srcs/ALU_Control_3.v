@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module ALU_Control_3(
     input [1:0] ALUOp,
     input [3:0] Funct,

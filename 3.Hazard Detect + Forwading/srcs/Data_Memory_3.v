@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Data_Memory_3(
     input [63:0] mem_add,
     input [63:0] write_data,

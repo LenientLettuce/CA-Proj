@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Instruction_Parser_3(
     input [31:0] instruction,    // 32-bit instruction input
     output [6:0] opcode,         // 7-bit opcode output

@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Immediate_Generator_3(
     input [31:0] instruction,
     output reg [63:0] immediate

@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module ALU_64_bit_3(
     input [63:0] a,         // Operand A
     input [63:0] b,         // Operand B
