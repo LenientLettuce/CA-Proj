@@ -50,7 +50,7 @@ module ID_EX_3 (
                 IDEX_ReadData1 <= ReadData1;
                 IDEX_ReadData2 <= ReadData2;
             end     
-            $display("ID_EX: rs1 = %d, rs2 = %d, rd = %d", IDEX_rs1, IDEX_rs2, IDEX_rd);
+//            $display("ID_EX: rs1 = %d, rs2 = %d, rd = %d", IDEX_rs1, IDEX_rs2, IDEX_rd);
 
     end
 endmodule

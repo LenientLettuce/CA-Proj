@@ -90,6 +90,7 @@ module RISC_V_Processor_3(
   IF_ID_3 if_id_reg (
     .clk                (clk),
     .reset              (reset), //EXM Branch using branch here
+    .IF_ID_Write        (IF_ID_Write),
     .PC_out             (PC_out),
     .Instruction        (Instruction),
     .IF_ID_PC_out        (IFID_PC_out),

@@ -1,1587 +1,551 @@
 Vivado Simulator 2020.1
 Time resolution is 1 ps
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = x
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd =  0
-EX_MEM: ALU_Result = 0000000000000000, rd =  0, RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd =  0
-EX_MEM: ALU_Result = 0000000000000000, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  9, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  9, rd =  1
-EX_MEM: ALU_Result = 0000000000000009, rd =  1, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  2, EXM_rd =  1, MWB_rd =  0, EXM_RegWrite = 1, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  2, rd =  2
-EX_MEM: ALU_Result = 0000000000000002, rd =  2, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  7, EXM_rd =  2, MWB_rd =  1, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  7, rd =  3
-EX_MEM: ALU_Result = 0000000000000007, rd =  3, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  1, EXM_rd =  3, MWB_rd =  2, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  1, rd =  4
-EX_MEM: ALU_Result = 0000000000000001, rd =  4, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  8, EXM_rd =  4, MWB_rd =  3, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  8, rd =  5
-EX_MEM: ALU_Result = 0000000000000008, rd =  5, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  4, EXM_rd =  5, MWB_rd =  4, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  4, rd =  6
-EX_MEM: ALU_Result = 0000000000000004, rd =  6, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  6, EXM_rd =  6, MWB_rd =  5, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  6, rd =  7
-EX_MEM: ALU_Result = 0000000000000006, rd =  7, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  1, EXM_rd =  7, MWB_rd =  6, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  1, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  2, EXM_rd =  0, MWB_rd =  7, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  2, rd =  4
-EX_MEM: ALU_Result = 0000000000000104, rd =  4, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  3, EXM_rd =  4, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  3, rd =  8
-EX_MEM: ALU_Result = 0000000000000108, rd =  8, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  4, EXM_rd =  8, MWB_rd =  4, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  4, rd = 12
-EX_MEM: ALU_Result = 000000000000010c, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  5, EXM_rd = 12, MWB_rd =  8, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  5, rd = 16
-EX_MEM: ALU_Result = 0000000000000110, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  6, EXM_rd = 16, MWB_rd = 12, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  6, rd = 20
-EX_MEM: ALU_Result = 0000000000000114, rd = 20, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  7, EXM_rd = 20, MWB_rd = 16, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  7, rd = 24
-EX_MEM: ALU_Result = 0000000000000118, rd = 24, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 24, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 10
-EX_MEM: ALU_Result = 0000000000000100, rd = 10, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  7, EXM_rd = 10, MWB_rd = 24, EXM_RegWrite = 1, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  7, rd = 11
-EX_MEM: ALU_Result = 0000000000000007, rd = 11, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 11, MWB_rd = 10, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd = 12
-EX_MEM: ALU_Result = 0000000000000000, rd = 12, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 12, MWB_rd = 11, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd = 13
-EX_MEM: ALU_Result = 0000000000000000, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000009
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000002
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000007
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000001
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000008
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000004
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000108
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 000000000000010c
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000110
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000114
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000118
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000007
 [205000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 14
-EX_MEM: ALU_Result = 0000000000000006, rd = 14, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 = 14, EXM_rd = 14, MWB_rd = 13, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 = 14, rd =  4
-EX_MEM: ALU_Result = fffffffffffffffa, rd =  4, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  4, MWB_rd = 14, EXM_RegWrite = 0, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
 [225000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  4, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
 [235000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
 [245000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffa, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
 [265000] REG READ: x17 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000100, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
 [275000] REG READ: x17 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000104, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
 [285000] REG READ: x18 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [295000] REG READ: x20 = 0000000000000000 (decimal: 0)
 [295000] REG READ: x19 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[305000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000001, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
 [325000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [325000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [335000] REG READ: x18 = 0000000000000104 (decimal: 260)
 [335000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 = 19, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 = 18, rs2 = 19, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 17
-EX_MEM: ALU_Result = 0000000000000000, rd = 17, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 17, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [365000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 0
-[375000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[385000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffb, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000002, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[375000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[385000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
 [405000] REG READ: x17 = 0000000000000100 (decimal: 256)
-[405000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-[415000] REG READ: x18 = 0000000000000104 (decimal: 260)
-[415000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 = 19, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 = 18, rs2 = 19, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 17
-EX_MEM: ALU_Result = 0000000000000000, rd = 17, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 17, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-[445000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 0
-[455000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[465000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffc, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000003, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[485000] REG READ: x17 = 0000000000000100 (decimal: 256)
-[485000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-[495000] REG READ: x18 = 0000000000000104 (decimal: 260)
-[495000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 = 19, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 = 18, rs2 = 19, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 17
-EX_MEM: ALU_Result = 0000000000000000, rd = 17, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 17, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-[525000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 0
-[535000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[545000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffd, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000004, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[565000] REG READ: x17 = 0000000000000100 (decimal: 256)
-[565000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-[575000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[415000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[425000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[435000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[435000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[465000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[465000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[505000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[515000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[525000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[545000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[555000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[565000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[575000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [575000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 = 19, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 = 18, rs2 = 19, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 17
-EX_MEM: ALU_Result = 0000000000000000, rd = 17, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 17, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-[605000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 0
-[615000] REG READ: x13 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[625000] REG READ: x13 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffe, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000005, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[645000] REG READ: x17 = 0000000000000100 (decimal: 256)
-[645000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-[655000] REG READ: x18 = 0000000000000104 (decimal: 260)
-[655000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 = 19, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 = 18, rs2 = 19, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 17
-EX_MEM: ALU_Result = 0000000000000000, rd = 17, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 17, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-[685000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 0
-[695000] REG READ: x13 = 0000000000000005 (decimal: 5)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[705000] REG READ: x13 = 0000000000000005 (decimal: 5)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = ffffffffffffffff, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000006, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[725000] REG READ: x17 = 0000000000000100 (decimal: 256)
-[725000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-[735000] REG READ: x18 = 0000000000000104 (decimal: 260)
-[735000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 = 19, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 = 18, rs2 = 19, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 17
-EX_MEM: ALU_Result = 0000000000000000, rd = 17, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 17, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-[765000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 0
-[775000] REG READ: x13 = 0000000000000006 (decimal: 6)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[785000] REG READ: x13 = 0000000000000006 (decimal: 6)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000007, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[805000] REG READ: x17 = 0000000000000100 (decimal: 256)
-[805000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-[815000] REG READ: x18 = 0000000000000104 (decimal: 260)
-[815000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 = 19, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 = 18, rs2 = 19, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  0, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 17
-EX_MEM: ALU_Result = 0000000000000000, rd = 17, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 17, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-[845000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 0
-[855000] REG READ: x13 = 0000000000000007 (decimal: 7)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[865000] REG READ: x13 = 0000000000000007 (decimal: 7)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000001, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000008, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[605000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[605000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[645000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[655000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[665000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[685000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[695000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[705000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[715000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[715000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[745000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[745000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[785000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[795000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[805000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[825000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[835000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[845000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[855000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[855000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
 [885000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [885000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-[895000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 =  1, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 = 12, rs2 =  1, rd = 12
-EX_MEM: ALU_Result = 0000000000000001, rd = 12, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 12, MWB_rd =  0, EXM_RegWrite = 1, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 25, MWB_rd = 12, EXM_RegWrite = 0, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [925000] REG READ: x12 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd = 25, EXM_RegWrite = 1, MWB_RegWrite = 0
-[935000] REG READ: x13 = 0000000000000008 (decimal: 8)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000005, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000003, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd = 13
-EX_MEM: ALU_Result = 0000000000000000, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 13, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[965000] REG READ: x12 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 11, rs2 = 31, rd = 14
-EX_MEM: ALU_Result = 0000000000000006, rd = 14, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 = 14, EXM_rd = 14, MWB_rd = 13, EXM_RegWrite = 1, MWB_RegWrite = 1
-[975000] REG READ: x12 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 12, rs2 = 14, rd =  4
-EX_MEM: ALU_Result = fffffffffffffffb, rd =  4, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 =  1, EXM_rd =  4, MWB_rd = 14, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 =  1, rd = 12
-EX_MEM: ALU_Result = 0000000000000002, rd = 12, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 12, MWB_rd =  4, EXM_RegWrite = 1, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 25, MWB_rd = 12, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd =  0
-EX_MEM: ALU_Result = 0000000000000000, rd =  0, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 1, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 13
-EX_MEM: ALU_Result = 0000000000000000, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 13, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1045000] REG READ: x12 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 11, rs2 = 31, rd = 14
-EX_MEM: ALU_Result = 0000000000000006, rd = 14, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 = 14, EXM_rd = 14, MWB_rd = 13, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 = 14, rd =  4
-EX_MEM: ALU_Result = fffffffffffffffc, rd =  4, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  4, MWB_rd = 14, EXM_RegWrite = 0, MWB_RegWrite = 1
-[1065000] REG READ: x12 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  4, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[935000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[945000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[965000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[975000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[985000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[995000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[995000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[1025000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[1025000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[1065000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [1075000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000004, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [1085000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffc, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
 [1105000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000100, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
 [1115000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000104, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
 [1125000] REG READ: x18 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [1135000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [1135000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1145000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000001, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
 [1165000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [1165000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[1205000] REG READ: x12 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1215000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000004, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1225000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffd, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000004, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[1205000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1215000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1225000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
 [1245000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000104, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
 [1255000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000108, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
 [1265000] REG READ: x18 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [1275000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [1275000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1285000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000002, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1305000] REG READ: x17 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[1305000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [1305000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[1345000] REG READ: x12 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1355000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000004, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1365000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffe, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000008, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1385000] REG READ: x17 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000108, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1395000] REG READ: x17 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 000000000000010c, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1405000] REG READ: x18 = 0000000000000108 (decimal: 264)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[1345000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1355000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1365000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[1385000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[1395000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[1405000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [1415000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [1415000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1425000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000003, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1445000] REG READ: x17 = 0000000000000108 (decimal: 264)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[1445000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [1445000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000108, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[1485000] REG READ: x12 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1495000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000004, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1505000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = ffffffffffffffff, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 000000000000000c, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1525000] REG READ: x17 = 0000000000000108 (decimal: 264)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 000000000000010c, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1535000] REG READ: x17 = 0000000000000108 (decimal: 264)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000110, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1545000] REG READ: x18 = 000000000000010c (decimal: 268)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[1485000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1495000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1505000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[1525000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[1535000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[1545000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [1555000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [1555000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1565000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000004, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1585000] REG READ: x17 = 000000000000010c (decimal: 268)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[1585000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [1585000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 000000000000010c, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[1625000] REG READ: x12 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1635000] REG READ: x13 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000004, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1645000] REG READ: x13 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000010, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1665000] REG READ: x17 = 000000000000010c (decimal: 268)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000110, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1675000] REG READ: x17 = 000000000000010c (decimal: 268)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000114, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1685000] REG READ: x18 = 0000000000000110 (decimal: 272)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[1625000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1635000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1645000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[1665000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[1675000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[1685000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [1695000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [1695000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1705000] REG READ: x13 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000005, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1725000] REG READ: x17 = 0000000000000110 (decimal: 272)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[1725000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [1725000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000110, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[1765000] REG READ: x12 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1775000] REG READ: x13 = 0000000000000005 (decimal: 5)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000004, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1785000] REG READ: x13 = 0000000000000005 (decimal: 5)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000001, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000014, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1805000] REG READ: x17 = 0000000000000110 (decimal: 272)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000114, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1815000] REG READ: x12 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000118, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 =  1, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 =  1, rd = 12
-EX_MEM: ALU_Result = 0000000000000003, rd = 12, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 12, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 25, MWB_rd = 12, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd =  0
-EX_MEM: ALU_Result = 0000000000000000, rd =  0, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 1, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 13
-EX_MEM: ALU_Result = 0000000000000000, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 13, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1885000] REG READ: x12 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 11, rs2 = 31, rd = 14
-EX_MEM: ALU_Result = 0000000000000006, rd = 14, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 = 14, EXM_rd = 14, MWB_rd = 13, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 = 14, rd =  4
-EX_MEM: ALU_Result = fffffffffffffffd, rd =  4, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  4, MWB_rd = 14, EXM_RegWrite = 0, MWB_RegWrite = 1
-[1905000] REG READ: x12 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  4, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[1765000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1775000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[1785000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[1805000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[1815000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[1825000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[1835000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[1835000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[1865000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[1865000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[1905000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [1915000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000003, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [1925000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffd, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[1945000] REG READ: x17 = 0000000000000114 (decimal: 276)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000100, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1955000] REG READ: x17 = 0000000000000114 (decimal: 276)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000104, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1965000] REG READ: x18 = 0000000000000118 (decimal: 280)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[1945000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[1955000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[1965000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [1975000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [1975000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[1985000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000001, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
 [2005000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [2005000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[2045000] REG READ: x12 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2055000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000003, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2065000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffe, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000004, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[2045000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2055000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2065000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
 [2085000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000104, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
 [2095000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000108, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
 [2105000] REG READ: x18 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [2115000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [2115000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2125000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000002, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2145000] REG READ: x17 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[2145000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [2145000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[2185000] REG READ: x12 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2195000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000003, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2205000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = ffffffffffffffff, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000008, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2225000] REG READ: x17 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000108, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2235000] REG READ: x17 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 000000000000010c, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2245000] REG READ: x18 = 0000000000000108 (decimal: 264)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[2185000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2195000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2205000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[2225000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[2235000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[2245000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [2255000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [2255000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2265000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000003, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2285000] REG READ: x17 = 0000000000000108 (decimal: 264)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[2285000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [2285000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000108, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[2325000] REG READ: x12 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2335000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000003, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2345000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 000000000000000c, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2365000] REG READ: x17 = 0000000000000108 (decimal: 264)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 000000000000010c, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2375000] REG READ: x17 = 0000000000000108 (decimal: 264)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000110, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2385000] REG READ: x18 = 000000000000010c (decimal: 268)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[2325000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2335000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2345000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[2365000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[2375000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[2385000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [2395000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [2395000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2405000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000004, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2425000] REG READ: x17 = 000000000000010c (decimal: 268)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[2425000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [2425000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 000000000000010c, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[2465000] REG READ: x12 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2475000] REG READ: x13 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000003, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2485000] REG READ: x13 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000001, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000010, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2505000] REG READ: x17 = 000000000000010c (decimal: 268)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000110, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2515000] REG READ: x12 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000114, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 =  1, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 =  1, rd = 12
-EX_MEM: ALU_Result = 0000000000000004, rd = 12, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 12, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 25, MWB_rd = 12, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd =  0
-EX_MEM: ALU_Result = 0000000000000000, rd =  0, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 1, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 13
-EX_MEM: ALU_Result = 0000000000000000, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 13, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2585000] REG READ: x12 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 11, rs2 = 31, rd = 14
-EX_MEM: ALU_Result = 0000000000000006, rd = 14, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 = 14, EXM_rd = 14, MWB_rd = 13, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 = 14, rd =  4
-EX_MEM: ALU_Result = fffffffffffffffe, rd =  4, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  4, MWB_rd = 14, EXM_RegWrite = 0, MWB_RegWrite = 1
-[2605000] REG READ: x12 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  4, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[2465000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2475000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2485000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[2505000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[2515000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[2525000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[2535000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[2535000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[2565000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[2565000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[2605000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [2615000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000002, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [2625000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = fffffffffffffffe, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2645000] REG READ: x17 = 0000000000000110 (decimal: 272)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000100, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2655000] REG READ: x17 = 0000000000000110 (decimal: 272)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000104, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2665000] REG READ: x18 = 0000000000000114 (decimal: 276)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[2645000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[2655000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[2665000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [2675000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [2675000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2685000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000001, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
 [2705000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [2705000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[2745000] REG READ: x12 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2755000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000002, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2765000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = ffffffffffffffff, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000004, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[2745000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2755000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2765000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
 [2785000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000104, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
 [2795000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000108, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
 [2805000] REG READ: x18 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [2815000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [2815000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2825000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000002, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2845000] REG READ: x17 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[2845000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [2845000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000104, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[2885000] REG READ: x12 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2895000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000002, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2905000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000008, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2925000] REG READ: x17 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000108, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2935000] REG READ: x17 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 000000000000010c, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2945000] REG READ: x18 = 0000000000000108 (decimal: 264)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[2885000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2895000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[2905000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[2925000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[2935000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[2945000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [2955000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [2955000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[2965000] REG READ: x13 = 0000000000000002 (decimal: 2)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000003, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
-[2985000] REG READ: x17 = 0000000000000108 (decimal: 264)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[2985000] REG READ: x17 = 0000000000000100 (decimal: 256)
 [2985000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000108, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[3025000] REG READ: x12 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[3035000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000002, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3045000] REG READ: x13 = 0000000000000003 (decimal: 3)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000001, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 000000000000000c, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[3065000] REG READ: x17 = 0000000000000108 (decimal: 264)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 000000000000010c, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3075000] REG READ: x12 = 0000000000000004 (decimal: 4)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000110, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 =  1, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 =  1, rd = 12
-EX_MEM: ALU_Result = 0000000000000005, rd = 12, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 12, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 25, MWB_rd = 12, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  0, rs2 =  0, rd =  0
-EX_MEM: ALU_Result = 0000000000000000, rd =  0, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 1, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  0, rs2 =  0, rd = 13
-EX_MEM: ALU_Result = 0000000000000000, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd = 13, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[3145000] REG READ: x12 = 0000000000000005 (decimal: 5)
-ID_EX: rs1 = 11, rs2 = 31, rd = 14
-EX_MEM: ALU_Result = 0000000000000006, rd = 14, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 12, IDEX_rs2 = 14, EXM_rd = 14, MWB_rd = 13, EXM_RegWrite = 1, MWB_RegWrite = 1
-ID_EX: rs1 = 12, rs2 = 14, rd =  4
-EX_MEM: ALU_Result = ffffffffffffffff, rd =  4, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  4, MWB_rd = 14, EXM_RegWrite = 0, MWB_RegWrite = 1
-[3165000] REG READ: x12 = 0000000000000005 (decimal: 5)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  4, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[3025000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[3035000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[3045000] REG READ: x13 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[3065000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[3075000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[3085000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[3095000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[3095000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[3125000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[3125000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
+[3165000] REG READ: x12 = 0000000000000000 (decimal: 0)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [3175000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000001, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: xxxxxxxxxxxxxxxx
 [3185000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = ffffffffffffffff, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[3205000] REG READ: x17 = 000000000000010c (decimal: 268)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000100, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3215000] REG READ: x17 = 000000000000010c (decimal: 268)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000104, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3225000] REG READ: x18 = 0000000000000110 (decimal: 272)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000006
+[3205000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: x, ReadData: 0000000000000000, ALUResult: fffffffffffffffa
+[3215000] REG READ: x17 = 0000000000000100 (decimal: 256)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000000
+[3225000] REG READ: x18 = 0000000000000104 (decimal: 260)
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000100
 [3235000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
 [3235000] REG READ: x19 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 = 18, rs2 =  0, rd = 20
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 20, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 01
-FORWARDING UNIT: IDEX_rs1 = 20, IDEX_rs2 = 19, EXM_rd = 20, MWB_rd = 19, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3245000] REG READ: x13 = 0000000000000000 (decimal: 0)
-ID_EX: rs1 = 20, rs2 = 19, rd = 12
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 12, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  1, EXM_rd = 12, MWB_rd = 20, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  1, rd = 13
-EX_MEM: ALU_Result = 0000000000000001, rd = 13, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  0, IDEX_rs2 =  0, EXM_rd = 13, MWB_rd = 12, EXM_RegWrite = 1, MWB_RegWrite = 0
+[MEM/WB] UPDATE | MemToReg: 0, ReadData: 0000000000000000, ALUResult: 0000000000000104
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
+[MEM/WB] UPDATE | MemToReg: 1, ReadData: xxxxxxxxxxxxxxxx, ALUResult: xxxxxxxxxxxxxxxx
 [3265000] REG READ: x17 = 0000000000000100 (decimal: 256)
-[3265000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal: x)
-ID_EX: rs1 =  0, rs2 =  0, rd = 25
-EX_MEM: ALU_Result = 0000000000000000, rd = 25, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 = 20, EXM_rd = 25, MWB_rd = 13, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 17, rs2 = 20, rd =  0
-EX_MEM: ALU_Result = 0000000000000100, rd =  0, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  0, MWB_rd = 25, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 =  x, IDEX_rs2 =  x, EXM_rd =  x, MWB_rd =  0, EXM_RegWrite = 0, MWB_RegWrite = 0
-ID_EX: rs1 =  x, rs2 =  x, rd =  x
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd =  x, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 11, IDEX_rs2 = 31, EXM_rd =  x, MWB_rd =  x, EXM_RegWrite = 0, MWB_RegWrite = 0
-[3305000] REG READ: x12 = 0000000000000005 (decimal: 5)
-ID_EX: rs1 = 11, rs2 = 31, rd = 15
-EX_MEM: ALU_Result = 0000000000000006, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 15, IDEX_rs2 = 12, EXM_rd = 15, MWB_rd =  x, EXM_RegWrite = 1, MWB_RegWrite = 0
-[3315000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 15, rs2 = 12, rd = 15
-EX_MEM: ALU_Result = 0000000000000001, rd = 15, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 = 15, EXM_rd = 15, MWB_rd = 15, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3325000] REG READ: x13 = 0000000000000001 (decimal: 1)
-ID_EX: rs1 = 13, rs2 = 15, rd = 16
-EX_MEM: ALU_Result = 0000000000000000, rd = 16, RegWrite = 0
-FORWARDING UNIT: Forward_A = 00, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 13, IDEX_rs2 =  2, EXM_rd = 16, MWB_rd = 15, EXM_RegWrite = 0, MWB_RegWrite = 1
-ID_EX: rs1 = 13, rs2 =  2, rd = 16
-EX_MEM: ALU_Result = 0000000000000004, rd = 16, RegWrite = 1
-FORWARDING UNIT: Forward_A = 00, Forward_B = 10
-FORWARDING UNIT: IDEX_rs1 = 10, IDEX_rs2 = 16, EXM_rd = 16, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 0
-[3345000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 10, rs2 = 16, rd = 17
-EX_MEM: ALU_Result = 0000000000000104, rd = 17, RegWrite = 1
-FORWARDING UNIT: Forward_A = 10, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  4, EXM_rd = 17, MWB_rd = 16, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3355000] REG READ: x17 = 0000000000000100 (decimal: 256)
-ID_EX: rs1 = 17, rs2 =  4, rd = 18
-EX_MEM: ALU_Result = 0000000000000108, rd = 18, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 17, IDEX_rs2 =  0, EXM_rd = 18, MWB_rd = 17, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3365000] REG READ: x18 = 0000000000000104 (decimal: 260)
-ID_EX: rs1 = 17, rs2 =  0, rd = 19
-EX_MEM: ALU_Result = xxxxxxxxxxxxxxxx, rd = 19, RegWrite = 1
-FORWARDING UNIT: Forward_A = 01, Forward_B = 00
-FORWARDING UNIT: IDEX_rs1 = 18, IDEX_rs2 =  0, EXM_rd = 19, MWB_rd = 18, EXM_RegWrite = 1, MWB_RegWrite = 1
-[3375000] REG READ: x20 = xxxxxxxxxxxxxxxx (decimal:
+[326500

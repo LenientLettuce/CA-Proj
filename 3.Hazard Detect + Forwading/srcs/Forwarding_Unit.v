@@ -40,8 +40,8 @@ module Forwarding_Unit(
             Forward_B = 2'b01;
         else
             Forward_B = 2'b00;
-        $display("FORWARDING UNIT: Forward_A = %b, Forward_B = %b", Forward_A, Forward_B);
-        $display("FORWARDING UNIT: IDEX_rs1 = %d, IDEX_rs2 = %d, EXM_rd = %d, MWB_rd = %d, EXM_RegWrite = %b, MWB_RegWrite = %b", IDEX_rs1, IDEX_rs2, EXM_rd, MWB_rd, EXM_RegWrite, MWB_RegWrite);
+/*        $display("FORWARDING UNIT: Forward_A = %b, Forward_B = %b", Forward_A, Forward_B);
+        $display("FORWARDING UNIT: IDEX_rs1 = %d, IDEX_rs2 = %d, EXM_rd = %d, MWB_rd = %d, EXM_RegWrite = %b, MWB_RegWrite = %b", IDEX_rs1, IDEX_rs2, EXM_rd, MWB_rd, EXM_RegWrite, MWB_RegWrite);*/
 
     end
 endmodule

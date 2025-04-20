@@ -35,7 +35,7 @@ module EX_MEM_3(
                 EXM_ReadData2 <= IDEX_ReadData2;
                 EXM_ALUResult <= ALUResult;
             end
-            $display("EX_MEM: ALU_Result = %h, rd = %d, RegWrite = %b", ALUResult, IDEX_rd, IDEX_RegWrite);
+//            $display("EX_MEM: ALU_Result = %h, rd = %d, RegWrite = %b", ALUResult, IDEX_rd, IDEX_RegWrite);
 
     end
 endmodule
