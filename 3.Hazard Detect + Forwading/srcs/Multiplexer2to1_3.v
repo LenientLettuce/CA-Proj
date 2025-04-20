@@ -1,4 +1,4 @@
-module Multiplexer_2(a, b, selector_bit, data_out);
+module Multiplexer2to1_3(a, b, selector_bit, data_out);
     input [63:0] a;         // First input data
     input [63:0] b;         // Second input data
     input selector_bit;     // Selection control
