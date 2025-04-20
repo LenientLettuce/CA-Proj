@@ -26,7 +26,7 @@ module tb_RISC_V_Processor();
     reg reset;
 
     // Instantiate the processor
-    RISC_V_Processor_2 _Processor (
+    RISC_V_Processor_3 _Processor (
         .clk(clk),
         .reset(reset)
     );
