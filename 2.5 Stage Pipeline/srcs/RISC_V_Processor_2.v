@@ -14,7 +14,7 @@ module RISC_V_Processor_2(
   Program_Counter_2 pc_reg (
     .clk     (clk),
     .reset   (reset),
-    .next_PC (PC_in),
+    .PC_in (PC_in),
     .PC_out  (PC_out)
   );
 
@@ -22,12 +22,12 @@ module RISC_V_Processor_2(
   Adder_2 pc_adder (
     .a   (PC_out),
     .b   (64'd4),
-    .sum (PC_plus4)
+    .out (PC_plus4)
   );
 
   // Instruction memory
   Instruction_Memory_2 imem (
-    .Address     (PC_out),
+    .Instr_Addr     (PC_out),
     .Instruction (Instruction)
   );
 
@@ -69,7 +69,7 @@ module RISC_V_Processor_2(
   wire [63:0] imm_data;
   Immediate_Generator_2 imm_gen (
     .instruction (IFID_instruction),
-    .imm_data    (imm_data)
+    .immediate    (imm_data)
   );
 
   // c) read register file (WB_data is written in the WB stage)
@@ -78,9 +78,9 @@ module RISC_V_Processor_2(
   wire        MWB_RegWrite;
   Register_File_2 regfile (
     .WriteData  (WB_data),
-    .rs1        (rs1),
-    .rs2        (rs2),
-    .rd         (MWB_rd),
+    .RS1        (rs1),
+    .RS2        (rs2),
+    .RD         (MWB_rd),
     .RegWrite   (MWB_RegWrite),
     .clk        (clk),
     .reset      (reset),
@@ -92,13 +92,13 @@ module RISC_V_Processor_2(
   wire        RegWrite, MemRead, MemWrite, MemtoReg, ALUsrc, Branch;
   wire [1:0]  ALUOp;
   Control_Unit_2 control (
-    .opcode    (opcode),
+    .Opcode    (opcode),
     .ALUOp     (ALUOp),
     .Branch    (Branch),
     .MemRead   (MemRead),
     .MemtoReg  (MemtoReg),
     .MemWrite  (MemWrite),
-    .ALUsrc    (ALUsrc),
+    .ALUSrc    (ALUsrc),
     .RegWrite  (RegWrite)
   );
 
@@ -171,8 +171,8 @@ module RISC_V_Processor_2(
   Multiplexer_2 alu_src_mux (
     .a   (IDEX_ReadData2),
     .b   (IDEX_imm_data),
-    .sel (IDEX_ALUSrc),
-    .out (ALU_operand2)
+    .selector_bit (IDEX_ALUSrc),
+    .data_out (ALU_operand2)
   );
 
   // c) do the addition/sub
@@ -191,7 +191,7 @@ module RISC_V_Processor_2(
   Adder_2 branch_adder (
     .a   (IDEX_PC_out),
     .b   (IDEX_imm_data << 1),
-    .sum (branch_target)
+    .out (branch_target)
   );
 
   // e) branch decision
@@ -244,19 +244,19 @@ module RISC_V_Processor_2(
   // data memory
   wire [63:0] ReadData;
   Data_Memory_2 dmem (
-    .Address   (EXM_ALU_Result),
-    .WriteData (EXM_ReadData2),
+    .mem_add   (EXM_ALU_Result),
+    .write_data (EXM_ReadData2),
     .clk       (clk),
-    .MemWrite  (EXM_MemWrite),
-    .MemRead   (EXM_MemRead),
-    .ReadData  (ReadData),
-    .array0    (array0),
-    .array1    (array1),
-    .array2    (array2),
-    .array3    (array3),
-    .array4    (array4),
-    .array5    (array5),
-    .array6    (array6)
+    .mem_write  (EXM_MemWrite),
+    .mem_read   (EXM_MemRead),
+    .read_data  (ReadData),
+    .arr0    (array0),
+    .arr1    (array1),
+    .arr2    (array2),
+    .arr3    (array3),
+    .arr4    (array4),
+    .arr5    (array5),
+    .arr6    (array6)
   );
 
   // update PC: if branch taken, jump; else PC+4
@@ -290,8 +290,8 @@ module RISC_V_Processor_2(
   Multiplexer_2 wb_mux (
     .a   (MWB_ALUResult),
     .b   (MWB_ReadData),
-    .sel (MWB_MemToReg),
-    .out (WB_data)
+    .selector_bit (MWB_MemToReg),
+    .data_out (WB_data)
   );
 
 endmodule
