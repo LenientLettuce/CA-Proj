@@ -1,13 +1,12 @@
 `timescale 1ns / 1ps
 
-module Multiplexer3to1_3(a, b, c, sel, data_out); 
-
-input [63:0] a; 
-input [63:0] b;
-input [63:0] c; 
-  input [1:0] selector_bit; 
-output reg [63:0] data_out;
-
+module Multiplexer3to1_3( 
+    input [63:0] a, 
+    input [63:0] b,
+    input [63:0] c, 
+    input [1:0] selector_bit, 
+    output reg [63:0] data_out
+);
 always @(*) begin
 
   case(selector_bit)  

@@ -45,6 +45,10 @@ module RISC_V_Processor_3(
   wire [63:0] ReadData,array0,array1,array2,array3,array4,array5,array6;
   wire [63:0] MWB_ReadData,MWB_ALUResult;
   
+  wire [63:0] Forward_A_Output, Forward_B_Output;
+  wire [1:0] Forward_A, Forward_B;
+  wire IDEX_Control_Mux_Out, IF_ID_Write, PC_Write; 
+  
   //
   // 1) IF stage
   //
@@ -67,6 +71,7 @@ module RISC_V_Processor_3(
     .clk     (clk),
     .reset   (reset),
     .PC_in (PC_in),
+    .PC_Write (PC_Write),
     .PC_out  (PC_out)
   );
   // Instruction memory
@@ -83,7 +88,7 @@ module RISC_V_Processor_3(
 
   IF_ID_3 if_id_reg (
     .clk                (clk),
-    .reset              (reset),
+    .reset              (reset), //EXM Branch using branch here
     .PC_out             (PC_out),
     .Instruction        (Instruction),
     .IF_ID_PC_out        (IFID_PC_out),
@@ -105,11 +110,27 @@ module RISC_V_Processor_3(
     .funct7      (funct7)
   );
 
+  Hazard_Detection haz_detect(
+    .IDEX_MemRead(IDEX_MemRead),
+    .IDEX_rd(IDEX_rd), 
+    .IFID_rs1(rs1), 
+    .IFID_rs2(rs2),
+    .IDEX_control_mux(IDEX_Control_Mux_Out), 
+    .IFID_Write(IF_ID_Write), 
+    .PC_write(PCWrite)
+  );
+  
   Immediate_Generator_3 imm_gen (
     .instruction (IFID_instruction),
     .immediate(imm_data)
   );
-
+  
+  
+  
+    assign Funct = (opcode == 7'b0110011)
+         ? {IFID_instruction[30], IFID_instruction[14:12]}  // R-type
+         : {1'b0,                 IFID_instruction[14:12]}; // I-type
+               
   Control_Unit_3 control (
     .Opcode    (opcode),
     .ALUOp     (ALUOp),
@@ -118,7 +139,8 @@ module RISC_V_Processor_3(
     .MemtoReg  (MemtoReg),
     .MemWrite  (MemWrite),
     .ALUSrc    (ALUsrc),
-    .RegWrite  (RegWrite)
+    .RegWrite  (RegWrite),
+    .IDEX_control_mux(IDEX_control_mux)
   );
 
   Register_File_3 regfile (
@@ -133,19 +155,12 @@ module RISC_V_Processor_3(
     .ReadData2  (ReadData2)
   );
 
-
-  assign Funct = (opcode == 7'b0110011)
-               ? {IFID_instruction[30], IFID_instruction[14:12]}  // R-type
-               : {1'b0,                 IFID_instruction[14:12]}; // I-type
-               
-
   Branch_Unit_3 branch_unit (
     .Funct3    (funct3),
     .ReadData1 (ReadData1),
     .ReadData2 (ReadData2),
     .sel       (branch_sel)
   );
-
 
   //
   // 4) ID/EX pipeline register
@@ -198,8 +213,35 @@ module RISC_V_Processor_3(
     .out (branch_target)
   );
   
+  Forwarding_Unit forward_unit (
+    .EXM_RegWrite(EXM_RegWrite), 
+    .MWB_RegWrite(MWM_RegWrite),
+    .IDEX_rs1(IDEX_rs1), 
+    .IDEX_rs2(IDEX_rs2),
+    .EXM_rd(EXM_rd),
+    .MWB_rd(MWM_rd),
+    .Forward_A(Forward_A),
+    .Forward_B(Forward_A)
+  );
+  
+  Multiplexer3to1_3 f_a(
+      .a(IDEX_ReadData1), 
+      .b(WriteData), 
+      .c(EXM_ALUResult), 
+      .selector_bit(Forward_A), 
+      .data_out(Forward_A_Output)
+  );
+    
+  Multiplexer3to1_3 f_b(
+      .a(IDEX_ReadData2), 
+      .b(WriteData), 
+      .c(EXM_ALUResult), 
+      .selector_bit(Forward_B), 
+      .data_out(Forward_B_Output)
+  );
+  
    Multiplexer2to1_3 alu_src_mux (
-    .a   (IDEX_ReadData2),
+    .a   (Forward_B_Output),
     .b   (IDEX_imm_data),
     .selector_bit (IDEX_ALUSrc),
     .data_out (ALU_operand2)
@@ -212,7 +254,7 @@ module RISC_V_Processor_3(
   );
 
   ALU_64_bit_3 alu_exec (
-    .a      (IDEX_ReadData1),
+    .a      (Forward_A_Output),
     .b      (ALU_operand2),
     .ALUOp  (operation),
     .Result (ALU_Result),
