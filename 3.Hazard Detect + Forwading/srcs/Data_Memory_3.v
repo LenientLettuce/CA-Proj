@@ -21,7 +21,8 @@ module Data_Memory_3(
         initial begin
         // Initialize all memory to 0
         for (i = 0; i < 512; i = i + 1)
-            Data_Memory[i] = 0;
+            Data_Memory[i] = 8'b0;
+            
         
         // Initialize array at memory address 0x100 (256 decimal)
         // Each integer is 4 bytes (32 bits)

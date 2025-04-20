@@ -42,7 +42,8 @@ module RISC_V_Processor_2(
   wire [63:0] EXM_Adder_out, EXM_ALU_Result, EXM_ReadData2;
   wire [4:0]  EXM_rd;
 
-  wire [63:0] ReadData,array0,array1,array2,array3,array4,array5,array6;
+  wire [63:0] ReadData;
+  wire [31:0] array0,array1,array2,array3,array4,array5,array6;
   wire [63:0] MWB_ReadData,MWB_ALUResult;
   
   //

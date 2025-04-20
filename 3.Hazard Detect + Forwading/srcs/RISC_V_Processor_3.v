@@ -42,7 +42,8 @@ module RISC_V_Processor_3(
   wire [63:0] EXM_Adder_out, EXM_ALU_Result, EXM_ReadData2;
   wire [4:0]  EXM_rd;
 
-  wire [63:0] ReadData,array0,array1,array2,array3,array4,array5,array6;
+  wire [63:0] ReadData;
+  wire [31:0] array0,array1,array2,array3,array4,array5,array6;
   wire [63:0] MWB_ReadData,MWB_ALUResult;
   
   wire [63:0] Forward_A_Output, Forward_B_Output;
@@ -294,7 +295,6 @@ module RISC_V_Processor_3(
   //
   // 7) MEM stage
   //
-  
   Data_Memory_3 dmem (
     .mem_add   (EXM_ALU_Result),
     .write_data (EXM_ReadData2),

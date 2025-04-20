@@ -4,48 +4,49 @@ Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ca3b6f4fdf
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr0' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:273]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr1' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:274]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr2' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:275]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr3' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:276]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr4' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:277]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr5' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:278]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr6' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:279]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'MWB_rd' [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:223]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'b' [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:230]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'c' [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:231]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'b' [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:238]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'c' [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:239]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Control_Unit_2.v" Line 1. Module Control_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Branch_Unit_2.v" Line 1. Module Branch_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_Control_2.v" Line 1. Module ALU_Control_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_64_bit_2.v" Line 1. Module ALU_64_bit_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Data_Memory_2.v" Line 1. Module Data_Memory_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Control_Unit_2.v" Line 1. Module Control_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Branch_Unit_2.v" Line 1. Module Branch_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_Control_2.v" Line 1. Module ALU_Control_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_64_bit_2.v" Line 1. Module ALU_64_bit_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Data_Memory_2.v" Line 1. Module Data_Memory_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Adder_3.v" Line 1. Module Adder_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Control_Unit_3.v" Line 1. Module Control_Unit_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Branch_Unit_3.v" Line 1. Module Branch_Unit_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Adder_3.v" Line 1. Module Adder_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/ALU_Control_3.v" Line 1. Module ALU_Control_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/ALU_64_bit_3.v" Line 1. Module ALU_64_bit_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Data_Memory_3.v" Line 1. Module Data_Memory_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Adder_3.v" Line 1. Module Adder_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Control_Unit_3.v" Line 1. Module Control_Unit_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Branch_Unit_3.v" Line 1. Module Branch_Unit_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Adder_3.v" Line 1. Module Adder_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/ALU_Control_3.v" Line 1. Module ALU_Control_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/ALU_64_bit_3.v" Line 1. Module ALU_64_bit_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Data_Memory_3.v" Line 1. Module Data_Memory_3 doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Adder_2
-Compiling module xil_defaultlib.Multiplexer_2
-Compiling module xil_defaultlib.Program_Counter_2
-Compiling module xil_defaultlib.Instruction_Memory_2
-Compiling module xil_defaultlib.IF_ID
-Compiling module xil_defaultlib.Instruction_Parser_2
-Compiling module xil_defaultlib.Immediate_Generator_2
-Compiling module xil_defaultlib.Control_Unit_2
-Compiling module xil_defaultlib.Register_File_2
-Compiling module xil_defaultlib.Branch_Unit_2
-Compiling module xil_defaultlib.ID_EX
-Compiling module xil_defaultlib.ALU_Control_2
-Compiling module xil_defaultlib.ALU_64_bit_2
-Compiling module xil_defaultlib.EX_MEM
-Compiling module xil_defaultlib.Data_Memory_2
-Compiling module xil_defaultlib.MEM_WB
-Compiling module xil_defaultlib.RISC_V_Processor_2
+Compiling module xil_defaultlib.Adder_3
+Compiling module xil_defaultlib.Multiplexer2to1_3
+Compiling module xil_defaultlib.Program_Counter_3
+Compiling module xil_defaultlib.Instruction_Memory_3
+Compiling module xil_defaultlib.IF_ID_3
+Compiling module xil_defaultlib.Instruction_Parser_3
+Compiling module xil_defaultlib.Hazard_Detection
+Compiling module xil_defaultlib.Immediate_Generator_3
+Compiling module xil_defaultlib.Control_Unit_3
+Compiling module xil_defaultlib.Register_File_3
+Compiling module xil_defaultlib.Branch_Unit_3
+Compiling module xil_defaultlib.ID_EX_3
+Compiling module xil_defaultlib.Forwarding_Unit
+Compiling module xil_defaultlib.Multiplexer3to1_3
+Compiling module xil_defaultlib.ALU_Control_3
+Compiling module xil_defaultlib.ALU_64_bit_3
+Compiling module xil_defaultlib.EX_MEM_3
+Compiling module xil_defaultlib.Data_Memory_3
+Compiling module xil_defaultlib.MEM_WB_3
+Compiling module xil_defaultlib.RISC_V_Processor_3
 Compiling module xil_defaultlib.tb_RISC_V_Processor
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_RISC_V_Processor_behav
