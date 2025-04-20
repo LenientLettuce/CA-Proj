@@ -161,6 +161,7 @@ module RISC_V_Processor_3(
   );
 
   Branch_Unit_3 branch_unit (
+    .opcode    (opcode),
     .Funct3    (funct3),
     .ReadData1 (ReadData1),
     .ReadData2 (ReadData2),
