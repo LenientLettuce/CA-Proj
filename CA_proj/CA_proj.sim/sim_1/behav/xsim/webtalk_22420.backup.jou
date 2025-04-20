@@ -2,13 +2,11 @@
 # Webtalk v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Apr 15 23:14:45 2025
-# Process ID: 3488
+# Start of session at: Mon Apr 21 00:29:59 2025
+# Process ID: 22420
 # Current directory: D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.sim/sim_1/behav/xsim/xsim.dir/tb_RISC_V_Processor_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source D:/Habib/4th -notrace
-couldn't read file "D:/Habib/4th": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Tue Apr 15 23:14:46 2025...

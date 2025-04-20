@@ -5,8 +5,7 @@ module ALU_64_bit_3(
     input [63:0] b,         // Operand B
     input [3:0] ALUOp,      // ALU Operation code
     output reg [63:0] Result, // Computed result
-    output reg ZERO,        // Zero flag
-    output reg a_bgt_b      // A > B flag
+    output reg ZERO        // Zero flag
 );
 
     wire [63:0] and_r, or_r, xor_r, add, sub;
@@ -34,16 +33,15 @@ module ALU_64_bit_3(
         endcase
 
         // Set the ZERO flag
-        if (a == b)
+        if (a == b) begin
             ZERO = 1;
-        else
+        end
+        else begin
             ZERO = 0;
-
-        // Set the A > B flag
-        if (a > b)
-            a_bgt_b = 1;
-        else
-            a_bgt_b = 0;
+        end
+            
+        $display("[%0t] ALU OP: %b, A=%h, B=%h, Result=%h", 
+        $time, ALUOp, a, b, Result);
     end
 
 endmodule

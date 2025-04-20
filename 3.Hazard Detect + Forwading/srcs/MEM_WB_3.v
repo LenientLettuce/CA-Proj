@@ -26,8 +26,8 @@ module MEM_WB_3(
             MWB_ReadData <= ReadData;
             
             // Debug output on every clock edge (non-reset)
-            $display("[MEM/WB] UPDATE | MemToReg: %b, ReadData: %h, ALUResult: %h", 
-                     MWB_MemToReg, MWB_ReadData, MWB_ALUResult);
+//            $display("[MEM/WB] UPDATE | MemToReg: %b, ReadData: %h, ALUResult: %h", 
+//                     MWB_MemToReg, MWB_ReadData, MWB_ALUResult);
         end
     end
 endmodule

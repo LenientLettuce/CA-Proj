@@ -24,7 +24,7 @@
 `timescale 1ns / 1ps
 
 module IF_ID_3(
-    input clk, reset, IF_ID_Write, 
+    input clk, reset, flush, IF_ID_Write, 
     input [63:0] PC_out,
     input [31:0] Instruction, 
     output reg [63:0] IF_ID_PC_out, 
@@ -36,6 +36,10 @@ module IF_ID_3(
                 IF_ID_Instruction <= 0; 
                 IF_ID_PC_out <= 0;
             end
+        else if (flush) begin
+            // Branch flush - clear instructions but keep PC
+            IF_ID_Instruction <= 32'b0;
+        end
         else if (IF_ID_Write == 0) //for nop bcs of load
             begin
                 IF_ID_PC_out <= IF_ID_PC_out; 

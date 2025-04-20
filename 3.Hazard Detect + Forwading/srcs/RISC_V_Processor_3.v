@@ -48,7 +48,8 @@ module RISC_V_Processor_3(
   
   wire [63:0] Forward_A_Output, Forward_B_Output;
   wire [1:0] Forward_A, Forward_B;
-  wire IDEX_Control_Mux_Out, IF_ID_Write, PC_Write; 
+  wire IDEX_Control_Mux_Out, IF_ID_Write, PC_Write;
+  wire branch_taken;
   
   //
   // 1) IF stage
@@ -61,6 +62,7 @@ module RISC_V_Processor_3(
     .out (PC_plus4)
   );
   
+  assign branch_taken = EXM_zero & EXM_Branch;
   Multiplexer2to1_3 PC_mux (
     .a   (PC_plus4),
     .b   (EXM_Adder_out),
@@ -90,6 +92,7 @@ module RISC_V_Processor_3(
   IF_ID_3 if_id_reg (
     .clk                (clk),
     .reset              (reset), //EXM Branch using branch here
+    .flush(branch_taken),
     .IF_ID_Write        (IF_ID_Write),
     .PC_out             (PC_out),
     .Instruction        (Instruction),
@@ -169,38 +172,39 @@ module RISC_V_Processor_3(
   //
 
   ID_EX_3 id_ex_reg (
+    .Funct           (Funct),
     .clk             (clk),
     .reset           (reset),
+    .flush           (branch_taken),
     .RegWrite        (RegWrite),
     .MemRead         (MemRead),
     .MemToReg        (MemtoReg),
     .MemWrite        (MemWrite),
-    .Branch          ((branch_sel & Branch)),
-    .ALUOp           (ALUOp),
+    .Branch          (Branch),
     .ALUSrc          (ALUsrc),
+    .ALUOp           (ALUOp),
+    .rs1             (rs1),
+    .rs2             (rs2),
+    .rd              (rd),
     .IFID_PC_out     (IFID_PC_out),
     .ReadData1       (ReadData1),
     .ReadData2       (ReadData2),
     .ImmData        (imm_data),
-    .rs1             (rs1),
-    .rs2             (rs2),
-    .rd              (rd),
-    .Funct           (Funct),
+    .IDEX_Funct      (IDEX_Funct),
     .IDEX_RegWrite   (IDEX_RegWrite),
     .IDEX_MemRead    (IDEX_MemRead),
     .IDEX_MemToReg   (IDEX_MemToReg),
     .IDEX_MemWrite   (IDEX_MemWrite),
     .IDEX_Branch     (IDEX_Branch),
-    .IDEX_ALUOp      (IDEX_ALUOp),
     .IDEX_ALUSrc     (IDEX_ALUSrc),
+    .IDEX_ALUOp      (IDEX_ALUOp),
     .IDEX_PC_out     (IDEX_PC_out),
     .IDEX_ReadData1  (IDEX_ReadData1),
     .IDEX_ReadData2  (IDEX_ReadData2),
     .IDEX_ImmData   (IDEX_imm_data),
     .IDEX_rs1        (IDEX_rs1),
     .IDEX_rs2        (IDEX_rs2),
-    .IDEX_rd         (IDEX_rd),
-    .IDEX_Funct      (IDEX_Funct)
+    .IDEX_rd         (IDEX_rd)
   );
 
 
@@ -270,6 +274,7 @@ module RISC_V_Processor_3(
   EX_MEM_3 ex_mem_reg (
     .clk               (clk),
     .reset             (reset),
+    .flush             (branch_taken),
     .IDEX_RegWrite     (IDEX_RegWrite),
     .IDEX_MemRead      (IDEX_MemRead),
     .IDEX_MemToReg     (IDEX_MemToReg),

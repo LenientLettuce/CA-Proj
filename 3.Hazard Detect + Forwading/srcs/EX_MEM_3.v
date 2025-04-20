@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module EX_MEM_3(
+    input clk, reset, flush, IDEX_RegWrite, IDEX_MemRead,  IDEX_MemWrite, IDEX_Branch, Zero,IDEX_MemToReg,
     input [63:0] Adder_out, ALUResult, IDEX_ReadData2,  
-    input clk, reset, IDEX_RegWrite, IDEX_MemRead,  IDEX_MemWrite, IDEX_Branch, Zero,IDEX_MemToReg, 
     input [4:0] IDEX_rd,
     output reg [4:0] EXM_rd,
     output reg [63:0] EXM_Adder_out, EXM_ReadData2, EXM_ALUResult, 

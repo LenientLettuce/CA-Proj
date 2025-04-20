@@ -2,15 +2,15 @@
 
 module ID_EX_3 (
     input [3:0] Funct,
-    input clk, reset, RegWrite, MemRead, MemToReg, MemWrite, Branch, ALUSrc,
+    input clk, reset, flush, RegWrite, MemRead, MemToReg, MemWrite, Branch, ALUSrc,
     input [1:0] ALUOp,
     input [4:0] rs1, rs2, rd,
     input [63:0] IFID_PC_out, ReadData1, ReadData2, ImmData, 
     output reg [3:0] IDEX_Funct,
     output reg IDEX_RegWrite, IDEX_MemRead, IDEX_MemToReg, IDEX_MemWrite, IDEX_Branch, IDEX_ALUSrc, 
     output reg [1:0] IDEX_ALUOp,
-    output reg [4:0] IDEX_rs1, IDEX_rs2, IDEX_rd,
-    output reg [63:0] IDEX_PC_out, IDEX_ReadData1, IDEX_ReadData2, IDEX_ImmData 
+    output reg [63:0] IDEX_PC_out, IDEX_ReadData1, IDEX_ReadData2, IDEX_ImmData,
+    output reg [4:0] IDEX_rs1, IDEX_rs2, IDEX_rd
 );    
     always @(posedge clk) 
     begin
