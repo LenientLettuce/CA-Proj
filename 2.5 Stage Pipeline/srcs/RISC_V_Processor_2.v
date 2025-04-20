@@ -66,7 +66,7 @@ module RISC_V_Processor_2(
   Multiplexer_2 PC_mux (
     .a   (PC_plus4),
     .b   (EXM_Adder_out), //might be issue
-    .selector_bit ((EXM_Branch & EXM_zero)),
+    .selector_bit (EXM_Branch),
     .data_out (PC_in)
   );
 
@@ -169,7 +169,7 @@ module RISC_V_Processor_2(
     .MemRead         (MemRead),
     .MemToReg        (MemtoReg),
     .MemWrite        (MemWrite),
-    .Branch          (branch_sel),
+    .Branch          ((branch_sel & Branch)),
     .ALUOp           (ALUOp),
     .ALUSrc          (ALUsrc),
     .IFID_PC_out     (IFID_PC_out),
