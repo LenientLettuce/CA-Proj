@@ -1,4 +1,4 @@
-module Control_Unit_2(
+module Control_Unit_3(
     input [6:0] Opcode,           // 7-bit input Opcode representing instruction type
     output reg [1:0] ALUOp,       // 2-bit ALU operation control signal
     output reg Branch,            // Branch control signal
@@ -6,7 +6,8 @@ module Control_Unit_2(
     output reg MemtoReg,          // Memory to Register control signal
     output reg MemWrite,          // Memory Write control signal
     output reg ALUSrc,            // ALU Source control signal (use of immediate or register)
-    output reg RegWrite           // Register Write control signal
+    output reg RegWrite,          // Register Write control signal
+    output reg IDEX_control_mux;        
     );
     
     always @(*) begin
@@ -69,5 +70,15 @@ module Control_Unit_2(
             ALUSrc <= 1'b0;
             RegWrite <= 1'b0;
         end
+          if (!IDEX_control_mux) //for nop (Control mux ID EX out=0 then signals forwarded are 0
+        begin
+            ALUsrc = 0;
+            MemtoReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUop = 2'b00;
+        end  
     end
 endmodule
