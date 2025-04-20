@@ -7,8 +7,7 @@ module Register_File_2(
     input clk,
     input reset,
     output reg [63:0] ReadData1,
-    output reg [63:0] ReadData2,
-    output [63:0] r2, r3, r4
+    output reg [63:0] ReadData2
 );
     reg [63:0] Registers [31:0];
 
@@ -61,10 +60,6 @@ module Register_File_2(
 //        endcase
     end
 
-    // Additional register outputs for debugging
-    assign r2 = Registers[2];
-    assign r3 = Registers[3];
-    assign r4 = Registers[4];
     
     // Continuous monitoring of specific registers
     always @(posedge clk) begin

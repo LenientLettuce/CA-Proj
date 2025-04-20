@@ -20,6 +20,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5
 INFO: [VRFC 10-311] analyzing module Immediate_Generator_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Instruction_Memory_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Instruction_Memory_2
+WARNING: [VRFC 10-3248] data object 'Inst_memory' is already declared [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Instruction_Memory_2.v:8]
+WARNING: [VRFC 10-3703] second declaration of 'Inst_memory' ignored [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Instruction_Memory_2.v:8]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Instruction_Parser_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Instruction_Parser_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/MEM_WB.v" into library xil_defaultlib
@@ -30,12 +32,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5
 INFO: [VRFC 10-311] analyzing module Program_Counter_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISC_V_Processor_2
-INFO: [VRFC 10-2458] undeclared symbol EXM_Adder_out, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:30]
-INFO: [VRFC 10-2458] undeclared symbol EXM_Branch, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:31]
-INFO: [VRFC 10-2458] undeclared symbol EXM_zero, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:31]
-WARNING: [VRFC 10-2938] 'EXM_Branch' is already implicitly declared on line 31 [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:217]
-WARNING: [VRFC 10-2938] 'EXM_Adder_out' is already implicitly declared on line 30 [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:218]
-INFO: [VRFC 10-2458] undeclared symbol MWB_MemToReg, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:282]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Register_File_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Register_File_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v" into library xil_defaultlib

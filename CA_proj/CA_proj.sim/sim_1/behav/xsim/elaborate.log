@@ -4,13 +4,13 @@ Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ca3b6f4fdf
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr0' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:260]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr1' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:261]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr2' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:262]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr3' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:263]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr4' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:264]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr5' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:265]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr6' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:266]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr0' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:280]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr1' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:281]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr2' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:282]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr3' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:283]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr4' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:284]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr5' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:285]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr6' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:286]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
