@@ -8,7 +8,6 @@ module Multiplexer3to1_3(
     output reg [63:0] data_out
 );
 always @(*) begin
-
   case(selector_bit)  
     2'b00 : data_out <= a; //if selector_bit = 0 then data is a else b
     2'b01 : data_out <= b; 

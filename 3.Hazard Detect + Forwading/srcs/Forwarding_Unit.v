@@ -26,19 +26,22 @@ module Forwarding_Unit(
     output reg [1:0] Forward_A, Forward_B
     );
     always @(*)begin
-    //for rs1->forward a
-    if ((EXM_rd == IDEX_rs1) && (EXM_RegWrite == 1) && (EXM_rd != 0))
-        Forward_A = 2'b10;
-    else if ((MWB_rd == IDEX_rs1) && (MWB_RegWrite == 1) && (MWB_rd != 0) && !(EXM_RegWrite == 1 && EXM_rd != 0 && EXM_rd == IDEX_rs1))
-        Forward_A = 2'b01;
-    else
-        Forward_A = 2'b00;
-    //for rs2->forward b
-    if ((EXM_rd == IDEX_rs2) && (EXM_RegWrite == 1) && (EXM_rd != 0))
-        Forward_B = 2'b10;
-    else if ((MWB_rd == IDEX_rs2) && (MWB_RegWrite == 1) && (MWB_rd != 0) && !(EXM_RegWrite == 1 && EXM_rd != 0 && EXM_rd == IDEX_rs2))
-        Forward_B = 2'b01;
-    else
-        Forward_B = 2'b00;
+        //for rs1->forward a
+        if ((EXM_rd == IDEX_rs1) && (EXM_RegWrite == 1) && (EXM_rd != 0))
+            Forward_A = 2'b10;
+        else if ((MWB_rd == IDEX_rs1) && (MWB_RegWrite == 1) && (MWB_rd != 0) && !(EXM_RegWrite == 1 && EXM_rd != 0 && EXM_rd == IDEX_rs1))
+            Forward_A = 2'b01;
+        else
+            Forward_A = 2'b00;
+        //for rs2->forward b
+        if ((EXM_rd == IDEX_rs2) && (EXM_RegWrite == 1) && (EXM_rd != 0))
+            Forward_B = 2'b10;
+        else if ((MWB_rd == IDEX_rs2) && (MWB_RegWrite == 1) && (MWB_rd != 0) && !(EXM_RegWrite == 1 && EXM_rd != 0 && EXM_rd == IDEX_rs2))
+            Forward_B = 2'b01;
+        else
+            Forward_B = 2'b00;
+        $display("FORWARDING UNIT: Forward_A = %b, Forward_B = %b", Forward_A, Forward_B);
+        $display("FORWARDING UNIT: IDEX_rs1 = %d, IDEX_rs2 = %d, EXM_rd = %d, MWB_rd = %d, EXM_RegWrite = %b, MWB_RegWrite = %b", IDEX_rs1, IDEX_rs2, EXM_rd, MWB_rd, EXM_RegWrite, MWB_RegWrite);
+
     end
 endmodule

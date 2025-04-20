@@ -4,22 +4,10 @@ Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ca3b6f4fdf
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'b' [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:230]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'b' [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:238]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Adder_3.v" Line 1. Module Adder_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Control_Unit_3.v" Line 1. Module Control_Unit_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Branch_Unit_3.v" Line 1. Module Branch_Unit_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Adder_3.v" Line 1. Module Adder_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/ALU_Control_3.v" Line 1. Module ALU_Control_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/ALU_64_bit_3.v" Line 1. Module ALU_64_bit_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Data_Memory_3.v" Line 1. Module Data_Memory_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Adder_3.v" Line 1. Module Adder_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Control_Unit_3.v" Line 1. Module Control_Unit_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Branch_Unit_3.v" Line 1. Module Branch_Unit_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Adder_3.v" Line 1. Module Adder_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/ALU_Control_3.v" Line 1. Module ALU_Control_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/ALU_64_bit_3.v" Line 1. Module ALU_64_bit_3 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Data_Memory_3.v" Line 1. Module Data_Memory_3 doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.Adder_3

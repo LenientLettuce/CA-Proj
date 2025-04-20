@@ -222,12 +222,12 @@ module RISC_V_Processor_3(
     .EXM_rd(EXM_rd),
     .MWB_rd(MWB_rd),
     .Forward_A(Forward_A),
-    .Forward_B(Forward_A)
+    .Forward_B(Forward_B)
   );
   
   Multiplexer3to1_3 f_a(
       .a(IDEX_ReadData1), 
-      .b(WB_data), 
+      .b(WB_Data), 
       .c(EXM_ALU_Result), 
       .selector_bit(Forward_A), 
       .data_out(Forward_A_Output)
@@ -235,12 +235,12 @@ module RISC_V_Processor_3(
     
   Multiplexer3to1_3 f_b(
       .a(IDEX_ReadData2), 
-      .b(WB_data), 
+      .b(WB_Data), 
       .c(EXM_ALU_Result), 
       .selector_bit(Forward_B), 
       .data_out(Forward_B_Output)
   );
-  
+
    Multiplexer2to1_3 alu_src_mux (
     .a   (Forward_B_Output),
     .b   (IDEX_imm_data),
