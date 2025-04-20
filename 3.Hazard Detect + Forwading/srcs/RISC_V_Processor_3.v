@@ -86,8 +86,8 @@ module RISC_V_Processor_3(
     .reset              (reset),
     .PC_out             (PC_out),
     .Instruction        (Instruction),
-    .IFID_PC_out        (IFID_PC_out),
-    .IFID_instruction   (IFID_instruction)
+    .IF_ID_PC_out        (IFID_PC_out),
+    .IF_ID_Instruction   (IFID_instruction)
   );
 
 
@@ -164,7 +164,7 @@ module RISC_V_Processor_3(
     .IFID_PC_out     (IFID_PC_out),
     .ReadData1       (ReadData1),
     .ReadData2       (ReadData2),
-    .imm_data        (imm_data),
+    .ImmData        (imm_data),
     .rs1             (rs1),
     .rs2             (rs2),
     .rd              (rd),
@@ -179,7 +179,7 @@ module RISC_V_Processor_3(
     .IDEX_PC_out     (IDEX_PC_out),
     .IDEX_ReadData1  (IDEX_ReadData1),
     .IDEX_ReadData2  (IDEX_ReadData2),
-    .IDEX_imm_data   (IDEX_imm_data),
+    .IDEX_ImmData   (IDEX_imm_data),
     .IDEX_rs1        (IDEX_rs1),
     .IDEX_rs2        (IDEX_rs2),
     .IDEX_rd         (IDEX_rd),
@@ -232,8 +232,8 @@ module RISC_V_Processor_3(
     .IDEX_MemWrite     (IDEX_MemWrite),
     .IDEX_Branch       (IDEX_Branch),
     .Adder_out         (branch_target),
-    .ALU_Result        (ALU_Result),
-    .zero              (zero_flag),
+    .ALUResult        (ALU_Result),
+    .Zero              (zero_flag),
     .IDEX_ReadData2    (IDEX_ReadData2),
     .IDEX_rd           (IDEX_rd),
     .EXM_RegWrite      (EXM_RegWrite),
@@ -242,8 +242,8 @@ module RISC_V_Processor_3(
     .EXM_MemWrite      (EXM_MemWrite),
     .EXM_Branch        (EXM_Branch),
     .EXM_Adder_out     (EXM_Adder_out),
-    .EXM_ALU_Result    (EXM_ALU_Result),
-    .EXM_zero          (EXM_zero),
+    .EXM_ALUResult    (EXM_ALU_Result),
+    .EXM_Zero          (EXM_zero),
     .EXM_ReadData2     (EXM_ReadData2),
     .EXM_rd            (EXM_rd)
   );
