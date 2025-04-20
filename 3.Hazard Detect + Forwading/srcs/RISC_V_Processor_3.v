@@ -25,7 +25,7 @@ module RISC_V_Processor_3(
   wire [3:0] Funct;
   wire branch_sel;
   
-  wire IDEX_RegWrite, IDEX_MemRead, IDEX_MemToReg,IDEX_MemWrite, IDEX_Branch, IDEX_ALUSrc;
+  wire IDEX_RegWrite, IDEX_MemRead, IDEX_MemToReg,IDEX_MemWrite, IDEX_Branch, IDEX_branch_sel, IDEX_ALUSrc;
   wire [1:0]  IDEX_ALUOp;
   wire [3:0]  IDEX_Funct;
   wire [4:0]  IDEX_rs1, IDEX_rs2, IDEX_rd;
@@ -38,7 +38,7 @@ module RISC_V_Processor_3(
   wire        zero_flag;
   wire [63:0] branch_target;
   
-  wire EXM_RegWrite, EXM_MemRead, EXM_MemToReg,EXM_MemWrite, EXM_Branch, EXM_zero;
+  wire EXM_RegWrite, EXM_MemRead, EXM_MemToReg,EXM_MemWrite, EXM_Branch, EXM_branch_sel, EXM_zero;
   wire [63:0] EXM_Adder_out, EXM_ALU_Result, EXM_ReadData2;
   wire [4:0]  EXM_rd;
 
@@ -62,7 +62,7 @@ module RISC_V_Processor_3(
     .out (PC_plus4)
   );
   
-  assign branch_taken = EXM_zero & EXM_Branch;
+  assign branch_taken = EXM_branch_sel && EXM_Branch;
   Multiplexer2to1_3 PC_mux (
     .a   (PC_plus4),
     .b   (EXM_Adder_out),
@@ -181,6 +181,7 @@ module RISC_V_Processor_3(
     .MemToReg        (MemtoReg),
     .MemWrite        (MemWrite),
     .Branch          (Branch),
+    .branch_sel      (branch_sel),
     .ALUSrc          (ALUsrc),
     .ALUOp           (ALUOp),
     .rs1             (rs1),
@@ -196,6 +197,7 @@ module RISC_V_Processor_3(
     .IDEX_MemToReg   (IDEX_MemToReg),
     .IDEX_MemWrite   (IDEX_MemWrite),
     .IDEX_Branch     (IDEX_Branch),
+    .IDEX_branch_sel  (IDEX_branch_sel),
     .IDEX_ALUSrc     (IDEX_ALUSrc),
     .IDEX_ALUOp      (IDEX_ALUOp),
     .IDEX_PC_out     (IDEX_PC_out),
@@ -280,6 +282,7 @@ module RISC_V_Processor_3(
     .IDEX_MemToReg     (IDEX_MemToReg),
     .IDEX_MemWrite     (IDEX_MemWrite),
     .IDEX_Branch       (IDEX_Branch),
+    .IDEX_branch_sel   (IDEX_branch_sel),
     .Adder_out         (branch_target),
     .ALUResult        (ALU_Result),
     .Zero              (zero_flag),
@@ -290,6 +293,7 @@ module RISC_V_Processor_3(
     .EXM_MemToReg      (EXM_MemToReg),
     .EXM_MemWrite      (EXM_MemWrite),
     .EXM_Branch        (EXM_Branch),
+    .EXM_branch_sel    (EXM_branch_sel),
     .EXM_Adder_out     (EXM_Adder_out),
     .EXM_ALUResult    (EXM_ALU_Result),
     .EXM_Zero          (EXM_zero),
