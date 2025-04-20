@@ -4,24 +4,48 @@ Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ca3b6f4fdf
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3180] cannot find port 'next_PC' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:17]
-ERROR: [VRFC 10-3180] cannot find port 'sum' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:25]
-ERROR: [VRFC 10-3180] cannot find port 'Address' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:30]
-ERROR: [VRFC 10-3180] cannot find port 'imm_data' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:72]
-ERROR: [VRFC 10-3180] cannot find port 'rd' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:83]
-ERROR: [VRFC 10-3180] cannot find port 'rs2' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:82]
-ERROR: [VRFC 10-3180] cannot find port 'rs1' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:81]
-ERROR: [VRFC 10-3180] cannot find port 'ALUsrc' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:101]
-ERROR: [VRFC 10-3180] cannot find port 'opcode' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:95]
-ERROR: [VRFC 10-3180] cannot find port 'out' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:175]
-ERROR: [VRFC 10-3180] cannot find port 'sel' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:174]
-ERROR: [VRFC 10-3180] cannot find port 'sum' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:194]
-ERROR: [VRFC 10-3180] cannot find port 'array6' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:259]
-ERROR: [VRFC 10-3180] cannot find port 'array5' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:258]
-ERROR: [VRFC 10-3180] cannot find port 'array4' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:257]
-ERROR: [VRFC 10-3180] cannot find port 'array3' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:256]
-ERROR: [VRFC 10-3180] cannot find port 'array2' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:255]
-ERROR: [VRFC 10-3180] cannot find port 'array1' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:254]
-ERROR: [VRFC 10-3180] cannot find port 'array0' on this module [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:253]
-INFO: [#UNDEF] Sorry, too many errors..
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr0' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:260]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr1' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:261]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr2' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:262]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr3' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:263]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr4' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:264]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr5' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:265]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr6' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:266]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Control_Unit_2.v" Line 1. Module Control_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Branch_Unit_2.v" Line 1. Module Branch_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_Control_2.v" Line 1. Module ALU_Control_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_64_bit_2.v" Line 1. Module ALU_64_bit_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Data_Memory_2.v" Line 1. Module Data_Memory_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Control_Unit_2.v" Line 1. Module Control_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Branch_Unit_2.v" Line 1. Module Branch_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_Control_2.v" Line 1. Module ALU_Control_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_64_bit_2.v" Line 1. Module ALU_64_bit_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Data_Memory_2.v" Line 1. Module Data_Memory_2 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter_2
+Compiling module xil_defaultlib.Adder_2
+Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.Instruction_Memory_2
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.Instruction_Parser_2
+Compiling module xil_defaultlib.Immediate_Generator_2
+Compiling module xil_defaultlib.Register_File_2
+Compiling module xil_defaultlib.Control_Unit_2
+Compiling module xil_defaultlib.Branch_Unit_2
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.ALU_Control_2
+Compiling module xil_defaultlib.ALU_64_bit_2
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.Data_Memory_2
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.RISC_V_Processor_2
+Compiling module xil_defaultlib.tb_RISC_V_Processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_Processor_behav

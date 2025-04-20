@@ -30,7 +30,7 @@ D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Instruction_Parser_2.v,1
 D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/MEM_WB.v,1745088248,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Multiplexer_2.v,,MEM_WB,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Multiplexer_2.v,1745087674,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Program_Counter_2.v,,Multiplexer_2,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Program_Counter_2.v,1745087680,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v,,Program_Counter_2,,,,,,,,
-D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v,1745090732,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Register_File_2.v,,RISC_V_Processor_2,,,,,,,,
+D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v,1745141021,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Register_File_2.v,,RISC_V_Processor_2,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Register_File_2.v,1745087706,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v,,Register_File_2,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
 D:/Habib/4th Sem/CA Lab/CA-Proj/CA_proj/CA_proj.srcs/sources_1/new/Branch_Unit.v,1745075404,verilog,,D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/srcs/Control_Unit.v,,Branch_Unit,,,,,,,,
