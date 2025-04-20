@@ -4,40 +4,40 @@ Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ca3b6f4fdf
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr0' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:280]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr1' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:281]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr2' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:282]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr3' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:283]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr4' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:284]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr5' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:285]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr6' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:286]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr0' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:273]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr1' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:274]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr2' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:275]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr3' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:276]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr4' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:277]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr5' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:278]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'arr6' [D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/RISC_V_Processor_2.v:279]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Control_Unit_2.v" Line 1. Module Control_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Branch_Unit_2.v" Line 1. Module Branch_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_Control_2.v" Line 1. Module ALU_Control_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_64_bit_2.v" Line 1. Module ALU_64_bit_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Data_Memory_2.v" Line 1. Module Data_Memory_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Control_Unit_2.v" Line 1. Module Control_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Branch_Unit_2.v" Line 1. Module Branch_Unit_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_Control_2.v" Line 1. Module ALU_Control_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/ALU_64_bit_2.v" Line 1. Module ALU_64_bit_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Adder_2.v" Line 1. Module Adder_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Habib/4th Sem/CA Lab/CA-Proj/2.5 Stage Pipeline/srcs/Data_Memory_2.v" Line 1. Module Data_Memory_2 doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Program_Counter_2
 Compiling module xil_defaultlib.Adder_2
 Compiling module xil_defaultlib.Multiplexer_2
+Compiling module xil_defaultlib.Program_Counter_2
 Compiling module xil_defaultlib.Instruction_Memory_2
 Compiling module xil_defaultlib.IF_ID
 Compiling module xil_defaultlib.Instruction_Parser_2
 Compiling module xil_defaultlib.Immediate_Generator_2
-Compiling module xil_defaultlib.Register_File_2
 Compiling module xil_defaultlib.Control_Unit_2
+Compiling module xil_defaultlib.Register_File_2
 Compiling module xil_defaultlib.Branch_Unit_2
 Compiling module xil_defaultlib.ID_EX
 Compiling module xil_defaultlib.ALU_Control_2

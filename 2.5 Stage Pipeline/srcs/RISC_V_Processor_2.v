@@ -49,12 +49,7 @@ module RISC_V_Processor_2(
   // 1) IF stage
   //?????????????????????????????????????????????????????????????????????????????
   // Program counter: on each rising clock PC_out ? PC_in (or zero on reset)
-  Program_Counter_2 pc_reg (
-    .clk     (clk),
-    .reset   (reset),
-    .PC_in (PC_in),
-    .PC_out  (PC_out)
-  );
+
 
   // PC + 4
   Adder_2 pc_adder (
@@ -70,6 +65,12 @@ module RISC_V_Processor_2(
     .data_out (PC_in)
   );
 
+  Program_Counter_2 pc_reg (
+    .clk     (clk),
+    .reset   (reset),
+    .PC_in (PC_in),
+    .PC_out  (PC_out)
+  );
   // Instruction memory
   Instruction_Memory_2 imem (
     .Instr_Addr     (PC_out),
@@ -114,7 +115,17 @@ module RISC_V_Processor_2(
     .immediate(imm_data)
   );
 
-  // c) read register file (WB_data is written in the WB stage)
+
+  Control_Unit_2 control (
+    .Opcode    (opcode),
+    .ALUOp     (ALUOp),
+    .Branch    (Branch),
+    .MemRead   (MemRead),
+    .MemtoReg  (MemtoReg),
+    .MemWrite  (MemWrite),
+    .ALUSrc    (ALUsrc),
+    .RegWrite  (RegWrite)
+  );
 
   Register_File_2 regfile (
     .WriteData  (WB_data),
@@ -128,20 +139,6 @@ module RISC_V_Processor_2(
     .ReadData2  (ReadData2)
   );
 
-  // d) control signals
-
-  Control_Unit_2 control (
-    .Opcode    (opcode),
-    .ALUOp     (ALUOp),
-    .Branch    (Branch),
-    .MemRead   (MemRead),
-    .MemtoReg  (MemtoReg),
-    .MemWrite  (MemWrite),
-    .ALUSrc    (ALUsrc),
-    .RegWrite  (RegWrite)
-  );
-
-  // e) build the 4-bit Funct field
 
   assign Funct = (opcode == 7'b0110011)
                ? {IFID_instruction[30], IFID_instruction[14:12]}  // R-type
@@ -150,7 +147,7 @@ module RISC_V_Processor_2(
    // e) branch decision
 
   Branch_Unit_2 branch_unit (
-    .Funct3    (Funct[2:0]),
+    .Funct3    (funct3),
     .ReadData1 (ReadData1),
     .ReadData2 (ReadData2),
     .sel       (branch_sel)
@@ -202,22 +199,25 @@ module RISC_V_Processor_2(
   // 5) EX stage
   //?????????????????????????????????????????????????????????????????????????????
 
-
-  Multiplexer_2 alu_src_mux (
+  
+  Adder_2 branch_adder (
+    .a   (IDEX_PC_out),
+    .b   (IDEX_imm_data<<1),
+    .out (branch_target)
+  );
+  
+   Multiplexer_2 alu_src_mux (
     .a   (IDEX_ReadData2),
     .b   (IDEX_imm_data),
     .selector_bit (IDEX_ALUSrc),
     .data_out (ALU_operand2)
   );
   
-  
   ALU_Control_2 alu_ctrl (
     .ALUOp     (IDEX_ALUOp),
     .Funct     (IDEX_Funct),
     .Operation (operation)
   );
-
-  // c) do the addition/sub
 
   ALU_64_bit_2 alu_exec (
     .a      (IDEX_ReadData1),
@@ -227,13 +227,6 @@ module RISC_V_Processor_2(
     .ZERO   (zero_flag)
   );
 
-  // d) branch-target adder
-  
-  Adder_2 branch_adder (
-    .a   (IDEX_PC_out),
-    .b   (IDEX_imm_data<<1),
-    .out (branch_target)
-  );
 
 
   //?????????????????????????????????????????????????????????????????????????????
