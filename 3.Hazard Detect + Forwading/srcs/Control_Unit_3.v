@@ -7,7 +7,7 @@ module Control_Unit_3(
     output reg MemWrite,          // Memory Write control signal
     output reg ALUSrc,            // ALU Source control signal (use of immediate or register)
     output reg RegWrite,          // Register Write control signal
-    output reg IDEX_control_mux;        
+    output reg IDEX_control_mux        
     );
     
     always @(*) begin

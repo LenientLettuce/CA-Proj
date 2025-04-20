@@ -2,7 +2,7 @@
 
 `timescale 1ns / 1ps
 
-module ID_EX (clk, reset, RegWrite, MemRead, MemToReg, MemWrite, Branch, ALUOp, ALUSrc, IFID_PC_out, 
+module ID_EX_3 (clk, reset, RegWrite, MemRead, MemToReg, MemWrite, Branch, ALUOp, ALUSrc, IFID_PC_out, 
     ReadData1, ReadData2, imm_data, rs1, rs2, rd, Funct, // inputs
     IDEX_RegWrite, IDEX_MemRead, IDEX_MemToReg, IDEX_MemWrite, IDEX_Branch, IDEX_ALUOp, IDEX_ALUSrc,// outputs
     IDEX_PC_out, IDEX_ReadData1, IDEX_ReadData2, IDEX_imm_data, IDEX_rs1, IDEX_rs2, IDEX_rd, IDEX_Funct); 

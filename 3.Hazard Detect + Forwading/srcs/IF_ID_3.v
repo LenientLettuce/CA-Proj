@@ -23,7 +23,7 @@
 
 `timescale 1ns / 1ps
 
-module IF_ID(clk, reset, PC_out, Instruction, IFID_PC_out, IFID_instruction); 
+module IF_ID_3(clk, reset, PC_out, Instruction, IFID_PC_out, IFID_instruction); 
     
     //inputs
     input clk, reset; 

@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module MEM_WB(clk, reset, EXM_RegWrite, EXM_MemToReg, ReadData, EXM_ALUResult, EXM_rd, // inputs
+module MEM_WB_3(clk, reset, EXM_RegWrite, EXM_MemToReg, ReadData, EXM_ALUResult, EXM_rd, // inputs
     MWB_RegWrite, MWB_MemToReg, MWB_ReadData, MWB_ALUResult, MWB_rd  //ouputs
     );
     

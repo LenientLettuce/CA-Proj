@@ -1,4 +1,4 @@
-module Instruction_Parser_2(
+module Instruction_Parser_3(
     input [31:0] instruction,    // 32-bit instruction input
     output [6:0] opcode,         // 7-bit opcode output
     output [4:0] rd,             // 5-bit rd output
