@@ -21,19 +21,19 @@ module Register_File_3(
     // Handle register writes (synchronous)
     always @(posedge clk) begin
         if (reset) begin
-            // Clear all registers except x0 on reset
+            ReadData1 = 0;
+            ReadData2 = 0;
             for (i = 1; i < 32; i = i + 1)
                 Registers[i] <= 64'b0;
         end
-        else if (RegWrite && (RD != 0)) begin // Never write to x0
+    end
+    
+    always @(negedge clk) //  RAW Dependencies, 3rd nop
+       begin 
+          if (RegWrite)
+          begin
             Registers[RD] <= WriteData;
-            // Monitor specific register writes
-//            case (RD)
-//                5'd12, 5'd13, 5'd17, 5'd18, 5'd19, 5'd20: 
-//                    $display("[%0t] REG WRITE: x%d = %h (decimal: %0d)", 
-//                            $time, RD, WriteData, $signed(WriteData));
-//            endcase
-        end
+          end
     end
 
     // Handle register reads (combinational)
@@ -44,7 +44,7 @@ module Register_File_3(
     end
     
     // Display specific register reads
-    always @(RS1, RS2) begin
+//    always @(RS1, RS2) begin
         // Check RS1
 //        case (RS1)
 //            5'd12, 5'd13, 5'd17, 5'd18, 5'd19, 5'd20:
@@ -58,7 +58,7 @@ module Register_File_3(
 //               // $display("[%0t] REG READ: x%d = %h (decimal: %0d)", 
 //                        //$time, RS2, Registers[RS2], $signed(Registers[RS2]));
 //        endcase
-    end
+//    end
 
     
     // Continuous monitoring of specific registers

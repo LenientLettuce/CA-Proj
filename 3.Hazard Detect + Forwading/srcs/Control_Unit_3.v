@@ -70,15 +70,16 @@ module Control_Unit_3(
             ALUSrc <= 1'b0;
             RegWrite <= 1'b0;
         end
-          if (!IDEX_control_mux) //for nop (Control mux ID EX out=0 then signals forwarded are 0
-        begin
-            ALUsrc = 0;
+        
+        if (!IDEX_control_mux) //for nop (Control mux ID EX out=0 then signals forwarded are 0
+            begin
+            ALUSrc = 0;
             MemtoReg = 0;
             RegWrite = 0;
             MemRead = 0;
             MemWrite = 0;
             Branch = 0;
-            ALUop = 2'b00;
-        end  
+            ALUOp = 2'b00;
+            end  
     end
 endmodule
