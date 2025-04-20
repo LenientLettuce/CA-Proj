@@ -228,7 +228,7 @@ module RISC_V_Processor_3(
   
   Multiplexer3to1_3 f_a(
       .a(IDEX_ReadData1), 
-      .b(WB_Data), 
+      .b(WB_data), 
       .c(EXM_ALU_Result), 
       .selector_bit(Forward_A), 
       .data_out(Forward_A_Output)
@@ -236,7 +236,7 @@ module RISC_V_Processor_3(
     
   Multiplexer3to1_3 f_b(
       .a(IDEX_ReadData2), 
-      .b(WB_Data), 
+      .b(WB_data), 
       .c(EXM_ALU_Result), 
       .selector_bit(Forward_B), 
       .data_out(Forward_B_Output)
