@@ -3,7 +3,6 @@
 `timescale 1ns / 1ps
 
 module Branch_Unit_3(
-    input [6:0] opcode,      // Added opcode input
     input [2:0] Funct3,
     input [63:0] ReadData1, 
     input [63:0] ReadData2,
@@ -15,8 +14,6 @@ module Branch_Unit_3(
     end
     always @(*) begin
         sel = 1'b0;  // Default value
-        // Only evaluate if opcode is SB-type (1100011)
-        if (opcode == 7'b1100011) begin
             case (Funct3)
                 3'b000: begin // beq
                     sel = (ReadData1 == ReadData2);
@@ -38,6 +35,5 @@ module Branch_Unit_3(
                 end
                 default: sel = 1'b0;
             endcase
-        end
     end
 endmodule

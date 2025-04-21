@@ -4,6 +4,7 @@ Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ca3b6f4fdf
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'flush' is not connected on this instance [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:280]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -18,12 +19,12 @@ Compiling module xil_defaultlib.Hazard_Detection
 Compiling module xil_defaultlib.Immediate_Generator_3
 Compiling module xil_defaultlib.Control_Unit_3
 Compiling module xil_defaultlib.Register_File_3
-Compiling module xil_defaultlib.Branch_Unit_3
 Compiling module xil_defaultlib.ID_EX_3
 Compiling module xil_defaultlib.Forwarding_Unit
 Compiling module xil_defaultlib.Multiplexer3to1_3
 Compiling module xil_defaultlib.ALU_Control_3
 Compiling module xil_defaultlib.ALU_64_bit_3
+Compiling module xil_defaultlib.Branch_Unit_3
 Compiling module xil_defaultlib.EX_MEM_3
 Compiling module xil_defaultlib.Data_Memory_3
 Compiling module xil_defaultlib.MEM_WB_3

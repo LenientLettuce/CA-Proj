@@ -38,7 +38,7 @@ module RISC_V_Processor_3(
   wire        zero_flag;
   wire [63:0] branch_target;
   
-  wire EXM_RegWrite, EXM_MemRead, EXM_MemToReg,EXM_MemWrite, EXM_Branch, EXM_zero;
+  wire EXM_RegWrite, EXM_MemRead, EXM_MemToReg,EXM_MemWrite, EXM_Branch, EXM_branch_sel, EXM_zero;
   wire [63:0] EXM_Adder_out, EXM_ALU_Result, EXM_ReadData2;
   wire [4:0]  EXM_rd;
 
@@ -50,6 +50,8 @@ module RISC_V_Processor_3(
   wire [1:0] Forward_A, Forward_B;
   wire IDEX_Control_Mux_Out, IF_ID_Write, PC_Write;
   wire branch_taken;
+  wire a_bgt_b;
+  wire [63:0] shifted_data;
   
   //
   // 1) IF stage
@@ -58,13 +60,7 @@ module RISC_V_Processor_3(
   // PC + 4
   
   
-  Program_Counter_3 pc_reg (
-    .clk     (clk),
-    .reset   (reset),
-    .PC_in (PC_in),
-    .PC_Write (PC_Write),
-    .PC_out  (PC_out)
-  );
+
   
   Adder_3 pc_adder (
     .a   (PC_out),
@@ -72,12 +68,20 @@ module RISC_V_Processor_3(
     .out (PC_plus4)
   );
   
-  assign branch_taken = branch_zero & Branch;
+  assign branch_taken = (EXM_branch_sel & EXM_Branch);
   Multiplexer2to1_3 PC_mux (
     .a   (PC_plus4),
     .b   (EXM_Adder_out),
     .selector_bit (branch_taken),
     .data_out (PC_in)
+  );
+  
+    Program_Counter_3 pc_reg (
+    .clk     (clk),
+    .reset   (reset),
+    .PC_in (PC_in),
+    .PC_Write (PC_Write),
+    .PC_out  (PC_out)
   );
 
   // Instruction memory
@@ -206,7 +210,7 @@ module RISC_V_Processor_3(
   // 5) EX stage
   //
 
-  
+  assign shifted_data = IDEX_imm_data << 1;
   Adder_3 branch_adder (
     .a   (IDEX_PC_out),
     .b   (IDEX_imm_data),
@@ -260,13 +264,15 @@ module RISC_V_Processor_3(
     .Result (ALU_Result),
     .ZERO   (zero_flag),
     .a_bgt_b (a_bgt_b)
+    
   );
-  assign branch_zero = IDEX_Funct[2] ? a_bgt_b : zero_flag;
-always @(*)
-begin
-$display("[time %0t] ALUOp = %b, ALUResult = %h, ZERO = %b, Branch = %b, branch_taken = %b", 
-         $time, ALUOp, ALU_Result, zero_flag, Branch, branch_taken);
-end
+      
+   Branch_Unit_3 branch_unit (
+    .Funct3    (IDEX_Funct[2:0]),
+    .ReadData1 (Forward_A_Output),
+    .ReadData2 (ALU_operand2),
+    .sel       (branch_sel)
+  );
   //
   // 6) EX/MEM pipeline register
   //
@@ -279,9 +285,9 @@ end
     .IDEX_MemToReg     (IDEX_MemToReg),
     .IDEX_MemWrite     (IDEX_MemWrite),
     .IDEX_Branch       (IDEX_Branch),
+    .IDEX_branch_sel   (branch_sel),
     .Adder_out         (branch_target),
     .ALUResult        (ALU_Result),
-    .Zero              (branch_zero),
     .IDEX_ReadData2    (IDEX_ReadData2),
     .IDEX_rd           (IDEX_rd),
     .EXM_RegWrite      (EXM_RegWrite),
@@ -289,6 +295,7 @@ end
     .EXM_MemToReg      (EXM_MemToReg),
     .EXM_MemWrite      (EXM_MemWrite),
     .EXM_Branch        (EXM_Branch),
+    .EXM_branch_sel    (EXM_branch_sel),
     .EXM_Adder_out     (EXM_Adder_out),
     .EXM_ALUResult    (EXM_ALU_Result),
     .EXM_Zero          (EXM_zero),

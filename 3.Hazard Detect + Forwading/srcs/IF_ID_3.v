@@ -1,4 +1,4 @@
-timescale 1ns / 1ps
+`timescale 1ns / 1ps
 
 module IF_ID_3(
     input clk, reset, IF_ID_Write, 

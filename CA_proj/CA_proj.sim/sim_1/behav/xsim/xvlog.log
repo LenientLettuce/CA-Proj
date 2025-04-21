@@ -36,6 +36,9 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/3.H
 INFO: [VRFC 10-311] analyzing module Program_Counter_3
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISC_V_Processor_3
+WARNING: [VRFC 10-3248] data object 'a_bgt_b' is already declared [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:53]
+WARNING: [VRFC 10-3703] second declaration of 'a_bgt_b' ignored [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:53]
+INFO: [VRFC 10-2458] undeclared symbol branch_sel, assumed default net type wire [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:274]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Register_File_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Register_File_3
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Habib/4th Sem/CA Lab/CA-Proj/1.Single Cycle/sim/tb_RISC_V_Processor.v" into library xil_defaultlib

@@ -7,7 +7,7 @@ module Program_Counter_3(
     output reg [63:0] PC_out
 
 );
-    always @(posedge clk) begin
+    always @(posedge clk or posedge reset) begin
     if (reset)
         PC_out <= 64'b0;
     else if (PC_Write)
