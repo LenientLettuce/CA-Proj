@@ -21,7 +21,7 @@ module Register_File_3(
     end
 
     // Handle register writes (synchronous)
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         if (reset) begin
             ReadData1 = 0;
             ReadData2 = 0;
@@ -66,7 +66,7 @@ module Register_File_3(
 
     
     // Continuous monitoring of specific registers
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         $display("[%0t] REG MONITOR: x12=%h x13=%h x16=%h x17=%h x18=%h x19=%h x20=%h",
                 $time,
                 Registers[12],
