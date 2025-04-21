@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 
 module Control_Unit_3(
     input [6:0] Opcode,           // 7-bit input Opcode representing instruction type
@@ -9,77 +8,64 @@ module Control_Unit_3(
     output reg MemWrite,          // Memory Write control signal
     output reg ALUSrc,            // ALU Source control signal (use of immediate or register)
     output reg RegWrite          // Register Write control signal    
-    );
-    
+);
+
     always @(*) begin
-        if(Opcode == 7'b0110011) begin // R-type instruction
-            ALUOp <= 2'b10;
-            Branch <= 1'b0;
-            MemRead <= 1'b0;
-            MemtoReg <= 1'b0;
-            MemWrite <= 1'b0; 
-            ALUSrc <= 1'b0;
-            RegWrite <= 1'b1;
+        // Default assignments
+        ALUOp = 2'b00;
+        Branch = 1'b0;
+        MemRead = 1'b0;
+        MemtoReg = 1'b0;
+        MemWrite = 1'b0;
+        ALUSrc = 1'b0;
+        RegWrite = 1'b0;
+
+        // Control signals based on the Opcode
+        if (Opcode == 7'b0110011) begin // R-type instruction
+            ALUOp = 2'b10;
+            Branch = 1'b0;
+            MemRead = 1'b0;
+            MemtoReg = 1'b0;
+            MemWrite = 1'b0; 
+            ALUSrc = 1'b0;
+            RegWrite = 1'b1;
         end
-        
-        else if(Opcode == 7'b0000011) begin // I-type instruction (load)
-            ALUOp <= 2'b00;
-            Branch <= 1'b0;
-            MemRead <= 1'b1;
-            MemtoReg <= 1'b1;
-            MemWrite <= 1'b0; 
-            ALUSrc <= 1'b1;
-            RegWrite <= 1'b1;
-        end
-        
-        else if(Opcode == 7'b0100011) begin // S-type instruction (store)
-            ALUOp <= 2'b00;
-            Branch <= 1'b0;
-            MemRead <= 1'b0;
-            MemtoReg <= 1'b0; // Don't care
-            MemWrite <= 1'b1; 
-            ALUSrc <= 1'b1;
-            RegWrite <= 1'b0;
-        end
-        
-        else if(Opcode == 7'b1100011) begin // SB-type instruction (branch equal)
-            ALUOp <= 2'b01;
-            Branch <= 1'b1;
-            MemRead <= 1'b0;
-            MemtoReg <= 1'bx; // Don't care
-            MemWrite <= 1'b0; 
-            ALUSrc <= 1'b0;
-            RegWrite <= 1'b0;
-        end
-        
-        else if(Opcode == 7'b0010011) begin // I-type instruction (addi)
-            ALUOp <= 2'b10;
-            Branch <= 1'b0;
-            MemRead <= 1'b0;
-            MemtoReg <= 1'b0;
-            MemWrite <= 1'b0; 
-            ALUSrc <= 1'b1;
-            RegWrite <= 1'b1;
-        end
-        
-        else begin // Default case
-            ALUOp <= 2'b00;
-            Branch <= 1'b0;
-            MemRead <= 1'b0;
-            MemtoReg <= 1'b0;
-            MemWrite <= 1'b0; 
-            ALUSrc <= 1'b0;
-            RegWrite <= 1'b0;
-        end
-        
-        if (IDEX_control_mux == 0) //for nop (Control mux ID EX out=0 then signals forwarded are 0
-            begin
-            ALUSrc = 0;
-            MemtoReg = 0;
-            RegWrite = 0;
-            MemRead = 0;
-            MemWrite = 0;
-            Branch = 0;
+        else if (Opcode == 7'b0000011) begin // I-type instruction (load)
             ALUOp = 2'b00;
-            end 
+            Branch = 1'b0;
+            MemRead = 1'b1;
+            MemtoReg = 1'b1;
+            MemWrite = 1'b0; 
+            ALUSrc = 1'b1;
+            RegWrite = 1'b1;
+        end
+        else if (Opcode == 7'b0100011) begin // S-type instruction (store)
+            ALUOp = 2'b00;
+            Branch = 1'b0;
+            MemRead = 1'b0;
+            MemtoReg = 1'b0; // Don't care
+            MemWrite = 1'b1; 
+            ALUSrc = 1'b1;
+            RegWrite = 1'b0;
+        end
+        else if (Opcode == 7'b1100011) begin // SB-type instruction (branch equal)
+            ALUOp = 2'b01;
+            Branch = 1'b1;
+            MemRead = 1'b0;
+            MemtoReg = 1'bx; // Don't care
+            MemWrite = 1'b0; 
+            ALUSrc = 1'b0;
+            RegWrite = 1'b0;
+        end
+        else if (Opcode == 7'b0010011) begin // I-type instruction (addi)
+            ALUOp = 2'b10;
+            Branch = 1'b0;
+            MemRead = 1'b0;
+            MemtoReg = 1'b0;
+            MemWrite = 1'b0; 
+            ALUSrc = 1'b1;
+            RegWrite = 1'b1;
+        end
+    end
 endmodule
+
