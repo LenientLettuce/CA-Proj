@@ -9,7 +9,7 @@ module MEM_WB_3(
     output reg [4:0] MWB_rd 
 );
 
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         if (reset) begin
             MWB_RegWrite <= 0;
             MWB_rd <= 0;
