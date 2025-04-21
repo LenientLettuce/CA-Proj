@@ -64,7 +64,7 @@ module Control_Unit_3(
         end
         
         else begin // Default case
-            ALUOp <= 2'bxx;
+            ALUOp <= 2'b00;
             Branch <= 1'b0;
             MemRead <= 1'b0;
             MemtoReg <= 1'b0;
@@ -82,6 +82,16 @@ module Control_Unit_3(
             MemWrite = 0;
             Branch = 0;
             ALUOp = 2'b00;
-            end  
+            end 
+            if (!IDEX_control_mux) //for nop (Control mux ID EX out=0 then signals forwarded are 0
+        begin
+        ALUSrc = 0;
+        MemtoReg = 0;
+        RegWrite = 0;
+        MemRead = 0;
+        MemWrite = 0;
+        Branch = 0;
+        ALUOp = 2'b00;
+        end   
     end
 endmodule
