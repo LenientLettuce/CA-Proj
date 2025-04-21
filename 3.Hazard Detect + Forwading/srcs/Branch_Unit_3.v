@@ -1,7 +1,5 @@
 `timescale 1ns / 1ps
 
-`timescale 1ns / 1ps
-
 module Branch_Unit_3(
     input [2:0] Funct3,
     input [63:0] ReadData1, 
