@@ -2,7 +2,8 @@
 
 module ID_EX_3 (
     input [3:0] Funct,
-    input clk, reset, RegWrite, MemRead, MemToReg, MemWrite, Branch, ALUSrc,
+    input clk, reset, control_mux_sel,
+    input RegWrite, MemRead, MemToReg, MemWrite, Branch, ALUSrc,
     input [1:0] ALUOp,
     input [4:0] rs1, rs2, rd,
     input [63:0] IFID_PC_out, ReadData1, ReadData2, ImmData, 
@@ -15,42 +16,52 @@ module ID_EX_3 (
     always @(posedge clk) 
     begin
        if(reset)
-            begin
+       begin
+            IDEX_RegWrite <= 0;
+            IDEX_MemRead <= 0;
+            IDEX_MemWrite <= 0;
+            IDEX_Branch <= 0;
+            IDEX_MemToReg <= 0;
+            IDEX_ALUSrc <= 0;
+            IDEX_ALUOp <= 0; 
+            IDEX_Funct <= 0; 
+            IDEX_ImmData <= 0;
+            IDEX_rs1 <= 0; 
+            IDEX_rs2 <= 0; 
+            IDEX_rd <= 0; 
+            IDEX_PC_out <= 0;
+            IDEX_ReadData1 <= 0; 
+            IDEX_ReadData2 <= 0;
+       end
+       else
+       begin
+            // Apply stall logic
+            if (control_mux_sel) begin
+                IDEX_RegWrite <= RegWrite;
+                IDEX_MemRead <= MemRead;
+                IDEX_MemWrite <= MemWrite;
+                IDEX_Branch <= Branch;
+                IDEX_MemToReg <= MemToReg;
+                IDEX_ALUSrc <= ALUSrc;
+                IDEX_ALUOp <= ALUOp;
+            end else begin
                 IDEX_RegWrite <= 0;
                 IDEX_MemRead <= 0;
                 IDEX_MemWrite <= 0;
                 IDEX_Branch <= 0;
                 IDEX_MemToReg <= 0;
                 IDEX_ALUSrc <= 0;
-                IDEX_ALUOp <= 0; 
-                IDEX_Funct <= 0; 
-                IDEX_ImmData <= 0;
-                IDEX_rs1 <= 0; 
-                IDEX_rs2 <= 0; 
-                IDEX_rd <= 0; 
-                IDEX_PC_out <= 0;
-                IDEX_ReadData1 <= 0; 
-                IDEX_ReadData2 <= 0;
+                IDEX_ALUOp <= 0;
             end
-        else
-            begin
-                IDEX_RegWrite <= RegWrite;
-                 IDEX_Branch <= Branch;
-                IDEX_MemRead <= MemRead;
-                IDEX_MemWrite <= MemWrite;
-                IDEX_ALUSrc <= ALUSrc;
-                IDEX_MemToReg <= MemToReg;
-                IDEX_ALUOp <= ALUOp;
-                IDEX_ImmData <= ImmData;
-                IDEX_Funct <= Funct;
-                IDEX_rs1 <= rs1;
-                IDEX_rs2 <= rs2;
-                IDEX_rd <= rd;
-                IDEX_PC_out <= IFID_PC_out;
-                IDEX_ReadData1 <= ReadData1;
-                IDEX_ReadData2 <= ReadData2;
-            end     
-//            $display("ID_EX: rs1 = %d, rs2 = %d, rd = %d", IDEX_rs1, IDEX_rs2, IDEX_rd);
 
+            IDEX_Funct <= Funct;
+            IDEX_ImmData <= ImmData;
+            IDEX_rs1 <= rs1;
+            IDEX_rs2 <= rs2;
+            IDEX_rd <= rd;
+            IDEX_PC_out <= IFID_PC_out;
+            IDEX_ReadData1 <= ReadData1;
+            IDEX_ReadData2 <= ReadData2;
+       end     
     end
 endmodule

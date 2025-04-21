@@ -8,8 +8,7 @@ module Control_Unit_3(
     output reg MemtoReg,          // Memory to Register control signal
     output reg MemWrite,          // Memory Write control signal
     output reg ALUSrc,            // ALU Source control signal (use of immediate or register)
-    output reg RegWrite,          // Register Write control signal
-    input IDEX_control_mux        
+    output reg RegWrite          // Register Write control signal    
     );
     
     always @(*) begin
@@ -83,15 +82,4 @@ module Control_Unit_3(
             Branch = 0;
             ALUOp = 2'b00;
             end 
-            if (!IDEX_control_mux) //for nop (Control mux ID EX out=0 then signals forwarded are 0
-        begin
-        ALUSrc = 0;
-        MemtoReg = 0;
-        RegWrite = 0;
-        MemRead = 0;
-        MemWrite = 0;
-        Branch = 0;
-        ALUOp = 2'b00;
-        end   
-    end
 endmodule

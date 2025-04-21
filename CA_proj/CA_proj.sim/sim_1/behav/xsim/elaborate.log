@@ -4,7 +4,8 @@ Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ca3b6f4fdf
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'flush' is not connected on this instance [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:280]
+WARNING: [VRFC 10-5021] port 'flush' is not connected on this instance [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/RISC_V_Processor_3.v:281]
+WARNING: [VRFC 10-3705] select index 151 into 'Inst_memory' is out of bounds [D:/Habib/4th Sem/CA Lab/CA-Proj/3.Hazard Detect + Forwading/srcs/Instruction_Memory_3.v:48]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

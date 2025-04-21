@@ -150,8 +150,7 @@ module RISC_V_Processor_3(
     .MemtoReg  (MemtoReg),
     .MemWrite  (MemWrite),
     .ALUSrc    (ALUsrc),
-    .RegWrite  (RegWrite),
-    .IDEX_control_mux(IDEX_Control_Mux_Out)
+    .RegWrite  (RegWrite)
   );
 
   Register_File_3 regfile (
@@ -170,40 +169,41 @@ module RISC_V_Processor_3(
   // 4) ID/EX pipeline register
   //
 
-  ID_EX_3 id_ex_reg (
-    .Funct           (Funct),
-    .clk             (clk),
-    .reset           (branch_taken),
-    .RegWrite        (RegWrite),
-    .MemRead         (MemRead),
-    .MemToReg        (MemtoReg),
-    .MemWrite        (MemWrite),
-    .Branch          (Branch),
-    .ALUSrc          (ALUsrc),
-    .ALUOp           (ALUOp),
-    .rs1             (rs1),
-    .rs2             (rs2),
-    .rd              (rd),
-    .IFID_PC_out     (IFID_PC_out),
-    .ReadData1       (ReadData1),
-    .ReadData2       (ReadData2),
-    .ImmData        (imm_data),
-    .IDEX_Funct      (IDEX_Funct),
-    .IDEX_RegWrite   (IDEX_RegWrite),
-    .IDEX_MemRead    (IDEX_MemRead),
-    .IDEX_MemToReg   (IDEX_MemToReg),
-    .IDEX_MemWrite   (IDEX_MemWrite),
-    .IDEX_Branch     (IDEX_Branch),
-    .IDEX_ALUSrc     (IDEX_ALUSrc),
-    .IDEX_ALUOp      (IDEX_ALUOp),
-    .IDEX_PC_out     (IDEX_PC_out),
-    .IDEX_ReadData1  (IDEX_ReadData1),
-    .IDEX_ReadData2  (IDEX_ReadData2),
-    .IDEX_ImmData   (IDEX_imm_data),
-    .IDEX_rs1        (IDEX_rs1),
-    .IDEX_rs2        (IDEX_rs2),
-    .IDEX_rd         (IDEX_rd)
-  );
+    ID_EX_3 id_ex_reg (
+        .Funct           (Funct),
+        .clk             (clk),
+        .reset           (branch_taken),
+        .control_mux_sel (IDEX_Control_Mux_Out),
+        .RegWrite        (RegWrite),
+        .MemRead         (MemRead),
+        .MemToReg        (MemtoReg),
+        .MemWrite        (MemWrite),
+        .Branch          (Branch),
+        .ALUSrc          (ALUsrc),
+        .ALUOp           (ALUOp),
+        .rs1             (rs1),
+        .rs2             (rs2),
+        .rd              (rd),
+        .IFID_PC_out     (IFID_PC_out),
+        .ReadData1       (ReadData1),
+        .ReadData2       (ReadData2),
+        .ImmData         (imm_data),
+        .IDEX_Funct      (IDEX_Funct),
+        .IDEX_RegWrite   (IDEX_RegWrite),
+        .IDEX_MemRead    (IDEX_MemRead),
+        .IDEX_MemToReg   (IDEX_MemToReg),
+        .IDEX_MemWrite   (IDEX_MemWrite),
+        .IDEX_Branch     (IDEX_Branch),
+        .IDEX_ALUSrc     (IDEX_ALUSrc),
+        .IDEX_ALUOp      (IDEX_ALUOp),
+        .IDEX_PC_out     (IDEX_PC_out),
+        .IDEX_ReadData1  (IDEX_ReadData1),
+        .IDEX_ReadData2  (IDEX_ReadData2),
+        .IDEX_ImmData    (IDEX_imm_data),
+        .IDEX_rs1        (IDEX_rs1),
+        .IDEX_rs2        (IDEX_rs2),
+        .IDEX_rd         (IDEX_rd)
+    );
 
 
   //
@@ -273,6 +273,7 @@ module RISC_V_Processor_3(
     .ReadData2 (ALU_operand2),
     .sel       (branch_sel)
   );
+  
   //
   // 6) EX/MEM pipeline register
   //

@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Hazard_Detection(
     input IDEX_MemRead,
     input [4:0] IDEX_rd, IFID_rs1, IFID_rs2,
