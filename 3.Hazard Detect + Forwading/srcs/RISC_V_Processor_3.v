@@ -7,7 +7,8 @@ module RISC_V_Processor_3(
 
   wire [63:0] PC_in, PC_out, PC_plus4;
   wire [31:0] Instruction;
-  
+  wire a_bgt_b;
+
   wire [63:0] IFID_PC_out;
   wire [31:0] IFID_instruction;
 
@@ -23,9 +24,8 @@ module RISC_V_Processor_3(
   wire        RegWrite, MemRead, MemWrite, MemtoReg, ALUsrc, Branch;
   wire [1:0]  ALUOp;
   wire [3:0] Funct;
-  wire branch_sel;
   
-  wire IDEX_RegWrite, IDEX_MemRead, IDEX_MemToReg,IDEX_MemWrite, IDEX_Branch, IDEX_branch_sel, IDEX_ALUSrc;
+  wire IDEX_RegWrite, IDEX_MemRead, IDEX_MemToReg,IDEX_MemWrite, IDEX_Branch, IDEX_ALUSrc;
   wire [1:0]  IDEX_ALUOp;
   wire [3:0]  IDEX_Funct;
   wire [4:0]  IDEX_rs1, IDEX_rs2, IDEX_rd;
@@ -38,7 +38,7 @@ module RISC_V_Processor_3(
   wire        zero_flag;
   wire [63:0] branch_target;
   
-  wire EXM_RegWrite, EXM_MemRead, EXM_MemToReg,EXM_MemWrite, EXM_Branch, EXM_branch_sel, EXM_zero;
+  wire EXM_RegWrite, EXM_MemRead, EXM_MemToReg,EXM_MemWrite, EXM_Branch, EXM_zero;
   wire [63:0] EXM_Adder_out, EXM_ALU_Result, EXM_ReadData2;
   wire [4:0]  EXM_rd;
 
@@ -56,20 +56,8 @@ module RISC_V_Processor_3(
   //
 
   // PC + 4
-  Adder_3 pc_adder (
-    .a   (PC_out),
-    .b   (64'd4),
-    .out (PC_plus4)
-  );
   
-  assign branch_taken = EXM_branch_sel && EXM_Branch;
-  Multiplexer2to1_3 PC_mux (
-    .a   (PC_plus4),
-    .b   (EXM_Adder_out),
-    .selector_bit (EXM_Branch),
-    .data_out (PC_in)
-  );
-
+  
   Program_Counter_3 pc_reg (
     .clk     (clk),
     .reset   (reset),
@@ -77,6 +65,21 @@ module RISC_V_Processor_3(
     .PC_Write (PC_Write),
     .PC_out  (PC_out)
   );
+  
+  Adder_3 pc_adder (
+    .a   (PC_out),
+    .b   (64'd4),
+    .out (PC_plus4)
+  );
+  
+  assign branch_taken = branch_zero & Branch;
+  Multiplexer2to1_3 PC_mux (
+    .a   (PC_plus4),
+    .b   (EXM_Adder_out),
+    .selector_bit (branch_taken),
+    .data_out (PC_in)
+  );
+
   // Instruction memory
   Instruction_Memory_3 imem (
     .Instr_Addr     (PC_out),
@@ -91,8 +94,7 @@ module RISC_V_Processor_3(
 
   IF_ID_3 if_id_reg (
     .clk                (clk),
-    .reset              (reset), //EXM Branch using branch here
-    .flush(branch_taken),
+    .reset              (branch_taken), //EXM Branch using branch here
     .IF_ID_Write        (IF_ID_Write),
     .PC_out             (PC_out),
     .Instruction        (Instruction),
@@ -160,14 +162,6 @@ module RISC_V_Processor_3(
     .ReadData2  (ReadData2)
   );
 
-  Branch_Unit_3 branch_unit (
-    .opcode    (opcode),
-    .Funct3    (funct3),
-    .ReadData1 (ReadData1),
-    .ReadData2 (ReadData2),
-    .sel       (branch_sel)
-  );
-
   //
   // 4) ID/EX pipeline register
   //
@@ -175,14 +169,12 @@ module RISC_V_Processor_3(
   ID_EX_3 id_ex_reg (
     .Funct           (Funct),
     .clk             (clk),
-    .reset           (reset),
-    .flush           (branch_taken),
+    .reset           (branch_taken),
     .RegWrite        (RegWrite),
     .MemRead         (MemRead),
     .MemToReg        (MemtoReg),
     .MemWrite        (MemWrite),
     .Branch          (Branch),
-    .branch_sel      (branch_sel),
     .ALUSrc          (ALUsrc),
     .ALUOp           (ALUOp),
     .rs1             (rs1),
@@ -198,7 +190,6 @@ module RISC_V_Processor_3(
     .IDEX_MemToReg   (IDEX_MemToReg),
     .IDEX_MemWrite   (IDEX_MemWrite),
     .IDEX_Branch     (IDEX_Branch),
-    .IDEX_branch_sel  (IDEX_branch_sel),
     .IDEX_ALUSrc     (IDEX_ALUSrc),
     .IDEX_ALUOp      (IDEX_ALUOp),
     .IDEX_PC_out     (IDEX_PC_out),
@@ -267,26 +258,30 @@ module RISC_V_Processor_3(
     .b      (ALU_operand2),
     .ALUOp  (operation),
     .Result (ALU_Result),
-    .ZERO   (zero_flag)
+    .ZERO   (zero_flag),
+    .a_bgt_b (a_bgt_b)
   );
-
+  assign branch_zero = IDEX_Funct[2] ? a_bgt_b : zero_flag;
+always @(*)
+begin
+$display("[time %0t] ALUOp = %b, ALUResult = %h, ZERO = %b, Branch = %b, branch_taken = %b", 
+         $time, ALUOp, ALU_Result, zero_flag, Branch, branch_taken);
+end
   //
   // 6) EX/MEM pipeline register
   //
 
   EX_MEM_3 ex_mem_reg (
     .clk               (clk),
-    .reset             (reset),
-    .flush             (branch_taken),
+    .reset             (branch_taken),
     .IDEX_RegWrite     (IDEX_RegWrite),
     .IDEX_MemRead      (IDEX_MemRead),
     .IDEX_MemToReg     (IDEX_MemToReg),
     .IDEX_MemWrite     (IDEX_MemWrite),
     .IDEX_Branch       (IDEX_Branch),
-    .IDEX_branch_sel   (IDEX_branch_sel),
     .Adder_out         (branch_target),
     .ALUResult        (ALU_Result),
-    .Zero              (zero_flag),
+    .Zero              (branch_zero),
     .IDEX_ReadData2    (IDEX_ReadData2),
     .IDEX_rd           (IDEX_rd),
     .EXM_RegWrite      (EXM_RegWrite),
@@ -294,7 +289,6 @@ module RISC_V_Processor_3(
     .EXM_MemToReg      (EXM_MemToReg),
     .EXM_MemWrite      (EXM_MemWrite),
     .EXM_Branch        (EXM_Branch),
-    .EXM_branch_sel    (EXM_branch_sel),
     .EXM_Adder_out     (EXM_Adder_out),
     .EXM_ALUResult    (EXM_ALU_Result),
     .EXM_Zero          (EXM_zero),
@@ -328,7 +322,7 @@ module RISC_V_Processor_3(
 
   MEM_WB_3 mem_wb_reg (
     .clk            (clk),
-    .reset          (reset),
+    .reset          (1'b0),
     .EXM_RegWrite   (EXM_RegWrite),
     .EXM_MemToReg   (EXM_MemToReg),
     .ReadData       (ReadData),
